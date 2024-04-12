@@ -10,7 +10,6 @@ import LogoNav from '/pages/Components/logo-nav/logo-nav';
 import { menu } from '/pages/core/info';
 import { serviceCategory } from '/pages/core/info';
 
-
 export default function MobileNavBar(){
     return(
         <>
@@ -20,7 +19,7 @@ export default function MobileNavBar(){
             <div className="nav-bar">
                 <LogoNav />
                 <div className="nav-bar-menu">
-                    <Navbar bg="#FFFFFF" expand={false}>
+                    <Navbar bg="" expand={false} className="customer-navbar">
                         <Container fluid>
                             <Navbar.Brand href="#"></Navbar.Brand>
                             <Navbar.Toggle aria-controls="offcanvasNavbar" />

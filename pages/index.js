@@ -70,7 +70,6 @@ export default function Home() {
             <div className="page-nav-bar">
               <div className="page-top-bar">
                 <div className="page-mobile-top-bar">
-                  <MobileTopBar />
                 </div>
                 <div className="page-tablet-top-bar">
                   <TabletTopBar />

@@ -34,16 +34,10 @@ export default function MobileContent(){
                             {pageContent.carouselHeading}
                         </h1>
                         <div className="button">
-                            <Button1 />
                         </div>
                     </div>
                 </div>
-                <div className="nhan-manh-1" id="m-section-1">
-                    <NhanManh1 />
-                </div>
-                <div>
-                    <CustomerReview />
-                </div>
+
                 <div className="dong-vien-5">
                     <NhanManh2 />
                 </div>
@@ -98,6 +92,9 @@ export default function MobileContent(){
                             <Service7 />
                         </div>
                     </div>
+                </div>
+                <div>
+                    <CustomerReview />
                 </div>
             </div>
             

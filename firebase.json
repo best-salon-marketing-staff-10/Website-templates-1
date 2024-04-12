@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "topnailsexeter",
+    "site": "website-templates-1",
     "public": "out",
     "ignore": [
       "firebase.json",

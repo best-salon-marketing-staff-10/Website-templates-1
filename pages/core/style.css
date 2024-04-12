@@ -42,9 +42,10 @@
   .page-container{
     padding-left: 0px;
     padding-right: 0px;
+    background-color: #ffffff;
   }
   .page-content{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 
 /*
@@ -66,6 +67,7 @@
     -moz-user-select: none; 
     -ms-user-select: none;      
     user-select: none;   
+    background-color: #ffffff;
   }
     
   /*
@@ -644,12 +646,13 @@
         margin-left: 15px;
         margin-bottom: 10px;
     }
-    .nav-bar-services{
-        margin-bottom: 20px;
+    .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+       border-radius: 5px;
     }
-    .nav-bar-main-category{
-        margin-bottom: 10px;
-        font-size: 25px;
+
+    .navbar-toggler{
+      border-color: #6a6a6a;
     }
   
   /*Logo trong thanh nav-bar
@@ -678,12 +681,14 @@
       font-size: 16px;
       margin-bottom: 0px;
       font-weight: 500;
+      color: #000000;
     }
     .logo-text-2{
       letter-spacing: 2px;
       font-size: 11px;
       margin-top: 0px;
       font-weight: 700;
+      color: #000000;
     }
   /*Phần Động Viên 1
   */
@@ -728,7 +733,7 @@
     /*nhan-manh-2.js
     */
     .nhan-manh-2-background{
-      background-color: #dcf5ff;
+      background-color: #ffffff;
       padding-top: 10px;
       padding-bottom: 15px;
       padding-left: 20px;
@@ -766,6 +771,7 @@
       font-weight: 700;
       margin-bottom: 10px;
       font-family: Alegreya Sans;
+      color: #198FD9;
     }
     .nhan-manh-content-description{
       font-family: Noto Sans;
