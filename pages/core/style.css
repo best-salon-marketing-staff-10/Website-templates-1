@@ -745,7 +745,6 @@
     /*nhan-manh-3.js
     */
     .nhan-manh-3-background{
-      background-color: #E9ECEF;
       padding-top: 10px;
       padding-bottom: 15px;
       padding-left: 30px;
@@ -778,13 +777,39 @@
       margin-bottom: 15px;
       font-size: 20px;
     }
+    .nhan-manh-2-images{
+      display: flex;
+    }
+    .nhan-manh-2-image-1{
+      max-width: 47%;
+      height: 200px;
+      margin-bottom: 80px;
+    }
+    .nhan-manh-2-image-2{
+      max-width: 47%;
+      height: 200px;
+      margin-top: 80px;
+    }
+    .nhan-manh-3-images{
+      display: flex;
+    }
+    .nhan-manh-3-image-1{
+      max-width: 50%;
+      height: 220px;
+      border-radius: 125px;
+      margin-bottom: 100px;
+    }
+    .nhan-manh-3-image-2{
+      max-width: 50%;
+      height: 220px;
+      border-radius: 125px;
+      margin-top: 100px;
+    }
   /*Phần Nhấn Mạnh 4
   */
     /* nhan-manh-4.js
     */
     .nhan-manh-4-background{
-      background-color: #bac4ce;
-      padding-top: 20px;
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 20px;
@@ -800,11 +825,32 @@
       margin: auto;
   }
     .nhan-manh-4-content-1-image{
-      margin: auto;
+      display: flex;
+    }
+    .nhan-manh-4-content-1-image-1{
+      max-width: 47%;
+      height: 200px;
+    }
+    .nhan-manh-4-content-1-image-2{
+      max-width: 47%;
+      height: 200px;
     }
     .nhan-manh-4-content-2-image{
       margin-bottom: 30px;
       margin: auto;
+      display: flex;
+    }
+    .nhan-manh-4-content-2-image-1{
+      max-width: 50%;
+      height: 200px;
+      border-radius: 100%;
+      margin-bottom: 100px;
+    }
+    .nhan-manh-4-content-2-image-2{
+      max-width: 50%;
+      height: 200px;
+      border-radius: 100%;
+      margin-top: 100px;
     }
     .nhan-manh-4-content-2-wrapper{
       text-align: center;
@@ -816,6 +862,7 @@
       font-weight: 700;
       margin-bottom: 20px;
       font-family: Alegreya Sans;
+      color: #198FD9;
     }
     .nhan-manh-4-content-description{
       font-family: Noto Sans;
@@ -827,17 +874,21 @@
       margin-right: 20px;
     }
     .nhan-manh-4-content-wrapper{
-      background-color: #F7F7F7;
       padding-top: 10px;
       padding-left: 10px;
       padding-right: 10px;
       padding-bottom: 10px;
     }
+    .nhan-manh-4-content-carousel-image{
+      margin-bottom: 30px;
+    }
     .nhan-manh-4-content-header{
       font-size: 36px;
       font-weight: 700;
       margin-bottom: 20px;
+      margin-top: 20px;
       font-family: Alegreya Sans;
+      color: #198FD9;
     }
     .nhan-manh-4-content-description{
       font-family: Noto Sans;

@@ -732,11 +732,15 @@ const images = {
   desktopCarouselImage3: "/images/desktop-nail-salon-happy-customer-3-2.jpg",
       //Ảnh ở Homepage khi vuốt xuống
   section5Image1: "/images/nail-extension-1-2.jpg",
+  section5Image2: "/images/nail-extension-25-2.jpg",
 
   section6Image1: "/images/nail-extension-2-2.jpg",
+  section6Image2: "/images/nail-design-1-2.jpg",
 
   section7Image1: "/images/nail-extension-3-2.jpg",
   section7Image2: "/images/nail-extension-4-2.jpg",
+  section7Image3: "/images/nail-extension-21-2.jpg",
+  section7Image4: "/images/nail-extension-22-2.jpg",
 
   LocationImage1: "/images/nail-extension-11-2.jpg",
 
