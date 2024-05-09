@@ -130,6 +130,22 @@
     margin-bottom: 50px;
     letter-spacing: 1px;
   }
+  .homepage-service-content{
+    position: relative;
+    line-height: 1.32;
+  }
+  .homepage-service-content-text{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .homepage-service-content-title{
+    margin: auto;
+    color: #00A859;
+    font-size: 35px;
+  }
 /*
 */
 
@@ -1046,6 +1062,23 @@
       font-size: 20px;
       font-style: italic;
       letter-spacing: 1px;
+    }
+    .customer-content{
+      font-size: 25px;
+      font-family: 'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      text-align: center;
+      margin: 30px;
+    }
+    .customer-content-name{
+      font-size: 28px;
+      font-family: 'Roboto', sans-serif ;
+      font-style: initial;
+      font-weight: bold;
+      
+      color: #A4319B;
+
     }
   /*Phần content của our-policy
   */

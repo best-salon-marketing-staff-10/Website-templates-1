@@ -21,6 +21,7 @@ import Offers from '/pages/Components/offers/offers';
 import { imageAlt } from '/pages/core/info';
 import { pageContent } from '/pages/core/info';
 import { images } from '/pages/core/info';
+import { serviceCategory } from '/pages/core/info';
 
 export default function MobileContent(){
     return(
@@ -37,7 +38,6 @@ export default function MobileContent(){
                         </div>
                     </div>
                 </div>
-
                 <div className="dong-vien-5">
                     <NhanManh2 />
                 </div>
@@ -49,48 +49,99 @@ export default function MobileContent(){
                 </div>
                 <div className="location-time-schedule">
                     <div className="location">
-                        <Location />
                     </div>
                     <div className="time-schedule">
                         <TimeSchedule />
                     </div>
                 </div>
-                
                 <div className="homepage-mobile-services">
                     <div className="services-list-1">
                         <div className="service-container">
-                            <Service1 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image" alt={imageAlt.serviceList1Image1Alt} 
+                                        src={images.serviceList1Image1} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory1}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="services-list-2">
                         <div className="service-container">
-                            <Service2 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image"alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory2}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="services-list-3">
                         <div className="service-container">
-                            <Service3 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image" alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory3}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="services-list-4">
                         <div className="service-container">
-                            <Service4 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image" alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory4}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="services-list-5">
                         <div className="service-container">
-                            <Service5 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image" alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory5}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="services-list-6">
                         <div className="service-container">
-                            <Service6 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image" alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory6}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="services-list-7">
                         <div className="service-container">
-                            <Service7 />
+                            <div className="homepage-service-content">
+                                <img className="carousel-image" alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                    {serviceCategory.serviceCategory7}
+                                    </h1>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div> 
+                        <Button2 />
                     </div>
                 </div>
                 <div>

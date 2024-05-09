@@ -60,41 +60,41 @@ serviceList
   */
 const businessOpeningTimeInput = {
   //Thời gian làm việc của tiệm
-  monOpeningTime: "09:00",
-  monClosingTime: "18:30",
+  monOpeningTime: "09:00 AM",
+  monClosingTime: "06:30 PM",
 
-  tueOpeningTime: "09:00",
-  tueClosingTime: "18:30",
+  tueOpeningTime: "09:00 AM",
+  tueClosingTime: "06:30 PM",
 
-  wedOpeningTime: "09:00",
-  wedClosingTime: "18:30",
+  wedOpeningTime: "09:00 AM",
+  wedClosingTime: "06:30 PM",
 
-  thuOpeningTime: "09:00",
-  thuClosingTime: "18:30",
+  thuOpeningTime: "09:00 AM",
+  thuClosingTime: "06:30 PM",
 
-  friOpeningTime: "09:00",
-  friClosingTime: "18:30",
+  friOpeningTime: "09:00 AM",
+  friClosingTime: "06:30 PM",
 
-  satOpeningTime: "09:00",
-  satClosingTime: "18:30",
+  satOpeningTime: "09:00 AM",
+  satClosingTime: "06:30 PM",
 
-  sunOpeningTime: "10:00",
-  sunClosingTime: "16:00",
+  sunOpeningTime: "10:00 AM",
+  sunClosingTime: "04:00 PM",
 }
 
 const processedBusinessOpeningTime = {
   //Thời gian làm việc của tiệm hiển thị trong file time-schedule.js
   //Đóng cửa ngày nào chỉnh sửa ngày đó thành Closed
-  workingTimeMon: "Monday: " + businessOpeningTimeInput.monOpeningTime + "–" + businessOpeningTimeInput.monClosingTime,
-  workingTimeTue: "Tuesday: " + businessOpeningTimeInput.tueOpeningTime + "–" + businessOpeningTimeInput.tueClosingTime,
-  workingTimeWed: "Wednesday: " + businessOpeningTimeInput.wedOpeningTime + "–" + businessOpeningTimeInput.wedClosingTime,
-  workingTimeThu: "Thursday: " + businessOpeningTimeInput.thuOpeningTime + "–" + businessOpeningTimeInput.thuClosingTime,
-  workingTimeFri: "Friday: " + businessOpeningTimeInput.friOpeningTime + "–" + businessOpeningTimeInput.friClosingTime,
-  workingTimeSat: "Saturday: " + businessOpeningTimeInput.satOpeningTime + "–" + businessOpeningTimeInput.satClosingTime,
-  workingTimeSun: "Sunday: " + businessOpeningTimeInput.sunOpeningTime + "–" + businessOpeningTimeInput.sunClosingTime,
+  workingTimeMon: "Monday: " + businessOpeningTimeInput.monOpeningTime + " – " + businessOpeningTimeInput.monClosingTime,
+  workingTimeTue: "Tuesday: " + businessOpeningTimeInput.tueOpeningTime + " – " + businessOpeningTimeInput.tueClosingTime,
+  workingTimeWed: "Wednesday: " + businessOpeningTimeInput.wedOpeningTime + " – " + businessOpeningTimeInput.wedClosingTime,
+  workingTimeThu: "Thursday: " + businessOpeningTimeInput.thuOpeningTime + " – " + businessOpeningTimeInput.thuClosingTime,
+  workingTimeFri: "Friday: " + businessOpeningTimeInput.friOpeningTime + " – " + businessOpeningTimeInput.friClosingTime,
+  workingTimeSat: "Saturday: " + businessOpeningTimeInput.satOpeningTime + " – " + businessOpeningTimeInput.satClosingTime,
+  workingTimeSun: "Sunday: " + businessOpeningTimeInput.sunOpeningTime + " – " + businessOpeningTimeInput.sunClosingTime,
 }
 
-const changedInfo = {   
+const changedInfo = {
   businessName: "Top Nails Exeter",
   businessAddressLevel1: "91 South St",
   businessAddressLevel2: "Exeter",
@@ -660,6 +660,22 @@ const pageContent = {
   
   copyrightContent: "© Copyright and Powered by Best Salon Marketing",
   copyrightWebsiteLink: "https://bestsalonmarketing.com",
+
+  //Customer-review-1
+  cusReviewContent1: "Brilliant service and skill. Would highly recommend for nails in Exeter.",
+  cusReview1: "-Rebecca Webster",
+  //Customer-review-2
+  cusReviewContent2: "Very nice service, quick and the staff are extermely kind. They are exactly on time, fairly, priced, got a nice collection of colors and very responsive to messages. They also give a student discount which is great!",
+  cusReview2: "-Wala Award",
+  //Customer-review-3
+  cusReviewContent3: "Visited today with my daughters. Lovely staff, loved the nails amazing service would recommend",
+  cusReview3: "-Karla Hanna",
+  //Customer-review-4
+  cusReviewContent4: "Best nail salon in Exeter, everyone is incredibly talented and will do anything you could possibly want. Will never go anywhere else.",
+  cusReview4: "-Tayler Tots",
+  //Customer-review-5
+  cusReviewContent5: "Edit - Second time going and they went above and beyond. Today I got a new set done - no problems, exactly what I asked for but I noticed the colour I wanted was very faded and not as bright as I had hoped, I didn’t say anything because of an appointment being so soon that I needed to get to. When I left the shop from getting my nails done I decided I wasn’t overly happy. (No fault of the nail tech). I went back and discussed my issue and I was sat back down and had the nail art re done with brighter colours!! Thank you so much for the brilliant customer service 😊. I had my nails today and I’m really happy with them, they are exactly what I asked for!! The lady that did them took great care and took her time. She was very gentle and lovely ☺️ I’ll definitely be coming back 💓",
+  cusReview5: "-Danni Alcock",
 }
 
 const button = {
@@ -828,7 +844,6 @@ const images = {
   cusReviewImage3: "/images/nail-salon-customer-review-3-2.jpg",
   cusReviewImage4: "/images/nail-salon-customer-review-4-2.jpg",
   cusReviewImage5: "/images/nail-salon-customer-review-5-2.jpg",
-
 
   //Ảnh Footer
   footerImagePhoneIcon: "/images/icons/icon-phone-product.png",

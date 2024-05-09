@@ -39,9 +39,7 @@ export default function DesktopContent(){
                 <div className="nhan-manh-1" id="d-section-1">
                     <NhanManh1/>
                 </div>
-                <div>
-                    <CustomerReview/>
-                </div>
+                
                 <div className="homepage-desktop-dong-vien">
                     <div className="dong-vien-5">
                         <NhanManh2/>
@@ -97,6 +95,9 @@ export default function DesktopContent(){
                             <Service7/>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <CustomerReview/>
                 </div>
             </div>
 

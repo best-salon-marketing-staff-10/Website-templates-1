@@ -26,54 +26,47 @@ export default function CustomerReview() {
                     </div>
                 </div>
                 
-                <div className="customer-review-carousel">
-                    <Carousel fade={true} controls={false} interval="1800">
-                        <Carousel.Item >
-                            <div className="carousel-image">
-                                <img 
-                                    className="customer-review-carousel-image"
-                                    src={images.cusReviewImage1}
-                                    alt={imageAlt.cusReviewImage1Alt}
-                                />
+                <div className="customer-review-content">
+                            <div className="customer-content">
+                                "{pageContent.cusReviewContent1}"
+                                <br/>
+                                <span className="customer-content-name">
+                                    {pageContent.cusReview1}
+                                </span>
+                                
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="carousel-image">
-                                <img
-                                    className="customer-review-carousel-image"
-                                    src={images.cusReviewImage2}
-                                    alt={imageAlt.cusReviewImage2Alt}
-                                />
+                            <div className="customer-content">
+                                "{pageContent.cusReviewContent2}"
+                                <br/>
+                                <span className="customer-content-name">
+                                    {pageContent.cusReview2}
+                                </span>
+                                
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="carousel-image">
-                                <img
-                                    className="customer-review-carousel-image"
-                                    src={images.cusReviewImage3}
-                                    alt={imageAlt.cusReviewImage3Alt}
-                                />
+                            <div className="customer-content">
+                                "{pageContent.cusReviewContent3}"
+                                <br/>
+                                <span className="customer-content-name">
+                                    {pageContent.cusReview3}
+                                </span>
+                                
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="carousel-image">
-                                <img
-                                    className="customer-review-carousel-image"
-                                    src={images.cusReviewImage4}
-                                    alt={imageAlt.cusReviewImage4Alt}
-                                />
+                            <div className="customer-content">
+                                "{pageContent.cusReviewContent4}"
+                                <br/>
+                                <span className="customer-content-name">
+                                    {pageContent.cusReview4}
+                                </span>
+                                
                             </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div className="carousel-image">
-                                <img
-                                    className="customer-review-carousel-image"
-                                    src={images.cusReviewImage5}
-                                    alt={imageAlt.cusReviewImage5Alt}
-                                />
+                            <div className="customer-content">
+                                "{pageContent.cusReviewContent5}"
+                                <br/>
+                                <span className="customer-content-name">
+                                    {pageContent.cusReview5}
+                                </span>
+                                
                             </div>
-                        </Carousel.Item>
-                    </Carousel> 
                 </div>    
                 <div className="button">
                     
