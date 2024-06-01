@@ -20,7 +20,7 @@ export default function DesktopNavBar(){
             <div className="nav-bar">
                 <LogoNav />
                 <div className="nav-bar-menu">
-                    <Navbar bg="#FFFFFF" expand={false}>
+                    <Navbar bg="white" expand={false}>
                         <Container fluid>
                             <Navbar.Brand href="#"></Navbar.Brand>
                             <Navbar.Toggle aria-controls="offcanvasNavbar" />

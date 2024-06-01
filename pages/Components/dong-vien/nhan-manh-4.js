@@ -22,7 +22,6 @@ export default function NhanManh4(){
                             {pageContent.section7Description}
                         </div>
                     </div>
-                    
                 </div>
                 <div className="nhan-manh-4-content-2">
                     <div className="nhan-manh-4-content-2-image">

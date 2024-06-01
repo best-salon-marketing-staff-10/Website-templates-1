@@ -213,20 +213,19 @@
   /*.button-model-1 và .button-model-2 khác nhau về màu thôi
   */
   .button-model-1{
-    background-color: #23d1ff;
+    background-image: linear-gradient(to right,  #af893c, #fee1c1 , #af893c);
+    border-color: #ca9a51;
     border-radius: 5px;
     color: #000000;
     text-align: center;
-    margin: auto;
-    max-width: 300px;
+    max-width: 130px;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 8px;
-    padding-right: 8px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    font-weight: 700;
+    margin-left: 10px;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 17px;
     vertical-align: middle;
   }
   .button-model-2{
@@ -248,6 +247,19 @@
     font-size: 21px;
     vertical-align: middle;
   }
+  .button-2{
+    background-image: linear-gradient(to right,  #af893c, #fee1c1 , #af893c);
+    border-color: #ca9a51;
+    border-radius: 5px;
+    color: #000000;
+    max-width: max-content;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    vertical-align: middle;
+  }
 
   /*Các yếu tố chung cho màn hình đầu tiên
   */
@@ -255,6 +267,7 @@
   .first-screen-block{
     position: relative;
     line-height: 1.32;
+    margin-top: 85px;
   }
 
   .first-screen-block-anh{
@@ -354,6 +367,114 @@
   
   /*Trang About
   */
+  
+  /*Nhấn mạnh 2
+  */
+  .nhan-manh-2-background{
+    background-color: #181616;
+    border: solid 1px;
+  }
+  .nhan-manh-2-content-header{
+    font-size: 33px; 
+    font-weight: bold;
+    color: #ac8152;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .nhan-manh-2-content-description{
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .nhan-manh-2-images{
+    display: flex;
+  }
+  .nhan-manh-2-image-1{
+    max-width: 45%;
+  }
+  .nhan-manh-2-image-2{
+    max-width: 45%;
+    margin-bottom: 60px;
+  }
+
+  /* Nhấn mạnh 3
+  */
+  .nhan-manh-3-background{
+    background-color: #e5ce9c;
+  }
+  .nhan-manh-3-content-header{
+    font-size: 33px; 
+    font-family: 'Times New Roman', Times, serif;
+    color: #ac8152;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .nhan-manh-3-content-description{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .nhan-manh-3-images{
+    padding-bottom: 30px;
+  }
+  .nhan-manh-3-image-1{
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 90%;
+  }
+  
+  .nhan-manh-3-image-2{
+    max-width: 90%;
+  }
+
+  /*Nhấn mạnh 4
+  */
+  .nhan-manh-4-background{
+    background-color: #000000;
+    text-align: center;
+  }
+  .nhan-manh-4-content-header{
+    font-size: 33px; 
+    font-family: 'Times New Roman', Times, serif;
+    color: #ac8152;
+    padding-top: 30px;
+  }
+  .nhan-manh-4-content-description{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  .nhan-manh-4-content-1-image-1,
+  .nhan-manh-4-content-1-image-2{
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .nhan-manh-4-content-2{
+    background-color: #181616;
+  }
+  .nhan-manh-4-content-header-4{
+    font-size: 33px; 
+    font-family: 'Times New Roman', Times, serif;
+    color: #ac8152;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .nhan-manh-4-content-2-image{
+    display: flex;
+  }
+  .nhan-manh-4-content-2-image-1,
+  .nhan-manh-4-content-2-image-2{
+    max-width: 40%;
+    margin-bottom: 20px;
+  }
+  .nhan-manh-4-button{
+    padding-bottom: 40px;
+    max-width: max-content;
+    margin: auto;
+  }
+
   
   }
   /*Chế độ Tablet
@@ -594,6 +715,9 @@
       font-size: 17px;
       vertical-align: middle;
     }
+    .nav-bar{
+      display: flex;
+    }
   /*Thanh Mobile top bar 
   */
     /*mobile-top-bar.js
@@ -627,11 +751,15 @@
     }
   /*Thanh nav bar, dùng chung cho cả 3 giao diện, nội dung của chúng chỉ khác nhau ở chỗ trỏ đến link id khác nhau để đảm bảo trải nghiệm trơn mượt khi chọn dịch vụ qua thanh nav bar
   */
+
+    .customer-navbar{
+      position: fixed;
+      border: solid 1px;
+      background-color: #00A859;
+      border-bottom: 2px solid #9f7741;
+    }
     .nav-bar{
       display: grid; 
-      grid-template-columns: 3fr 1fr;
-      margin-top: 10px;
-      margin-bottom: 10px;
       margin-left: 10px;
     }            
     .nav-bar-menu{
@@ -747,7 +875,6 @@
   /*Riêng Phần background của Nhấn Mạnh 2 
   */
     /*nhan-manh-2.js
-    */
     .nhan-manh-2-background{
       background-color: #ffffff;
       padding-top: 10px;
@@ -756,22 +883,24 @@
       padding-right: 20px;
       background-image: url("/images/our-mission-480px.jpg");
     }
+    */
+    
   /*Riêng Phần background của Nhấn Mạnh 3 
   */
     /*nhan-manh-3.js
-    */
     .nhan-manh-3-background{
       padding-top: 10px;
       padding-bottom: 15px;
       padding-left: 30px;
       padding-right: 20px;
     }
+    */
+    
   /*Chung Phần Nhấn Mạnh 2 3 
   */
     /* nhan-manh-2.js
       nhan-manh-3.js
-    */
-    .nhan-manh-content{
+      .nhan-manh-content{
       text-align: center;
       background-color: #FFFFFF;
       padding-top: 20px;
@@ -821,10 +950,12 @@
       border-radius: 125px;
       margin-top: 100px;
     }
+    */
+    
+  
   /*Phần Nhấn Mạnh 4
   */
     /* nhan-manh-4.js
-    */
     .nhan-manh-4-background{
       padding-left: 20px;
       padding-right: 20px;
@@ -909,6 +1040,8 @@
     .nhan-manh-4-content-description{
       font-family: Noto Sans;
     }
+    */
+    
   /*Phần Location của tiệm
   */
     /* location.js
@@ -1073,12 +1206,10 @@
     }
     .customer-content-name{
       font-size: 28px;
-      font-family: 'Roboto', sans-serif ;
+      font-family: 'Roboto', sans-serif;
       font-style: initial;
       font-weight: bold;
-      
       color: #A4319B;
-
     }
   /*Phần content của our-policy
   */

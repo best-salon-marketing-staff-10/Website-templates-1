@@ -731,6 +731,9 @@ const button = {
   button12LinkToMobile: "/services/#m-service-list-7",
   button12LinkToTablet: "/services/#t-service-list-7",
   button12LinkToDesktop: "/services/#d-service-list-7",
+
+  buttonContentTransfer: ">",
+  button2ContentTransfer: "<",
 }
 
 const images = {
@@ -749,9 +752,11 @@ const images = {
       //Ảnh ở Homepage khi vuốt xuống
   section5Image1: "/images/nail-extension-1-2.jpg",
   section5Image2: "/images/nail-extension-25-2.jpg",
+  section5Image3: "/images/nail-extension-24-2.jpg",
 
   section6Image1: "/images/nail-extension-2-2.jpg",
   section6Image2: "/images/nail-design-1-2.jpg",
+  section6Image3: "/images/nail-extension-7-2.jpg",
 
   section7Image1: "/images/nail-extension-3-2.jpg",
   section7Image2: "/images/nail-extension-4-2.jpg",

@@ -6,6 +6,7 @@ import Button3 from '/pages/Components/buttons/button-3';
 import { pageContent } from '/pages/core/info';
 import { imageAlt } from '/pages/core/info';
 import { images } from '/pages/core/info';
+import { button } from '/pages/core/info';
 
 
 
@@ -27,46 +28,43 @@ export default function CustomerReview() {
                 </div>
                 
                 <div className="customer-review-content">
-                            <div className="customer-content">
-                                "{pageContent.cusReviewContent1}"
-                                <br/>
-                                <span className="customer-content-name">
-                                    {pageContent.cusReview1}
-                                </span>
-                                
-                            </div>
-                            <div className="customer-content">
-                                "{pageContent.cusReviewContent2}"
-                                <br/>
-                                <span className="customer-content-name">
-                                    {pageContent.cusReview2}
-                                </span>
-                                
-                            </div>
-                            <div className="customer-content">
-                                "{pageContent.cusReviewContent3}"
-                                <br/>
-                                <span className="customer-content-name">
-                                    {pageContent.cusReview3}
-                                </span>
-                                
-                            </div>
-                            <div className="customer-content">
-                                "{pageContent.cusReviewContent4}"
-                                <br/>
-                                <span className="customer-content-name">
-                                    {pageContent.cusReview4}
-                                </span>
-                                
-                            </div>
-                            <div className="customer-content">
-                                "{pageContent.cusReviewContent5}"
-                                <br/>
-                                <span className="customer-content-name">
-                                    {pageContent.cusReview5}
-                                </span>
-                                
-                            </div>
+                    <div className="customer-review-content-slider">
+                        <div className="customer-content">
+                            "{pageContent.cusReviewContent1}"
+                            <br/>
+                            <span className="customer-content-name">
+                                {pageContent.cusReview1}
+                            </span> 
+                        </div>
+                        <div className="customer-content">
+                            "{pageContent.cusReviewContent2}"
+                            <br/>
+                            <span className="customer-content-name">
+                                {pageContent.cusReview2}
+                            </span>
+                        </div>
+                        <div className="customer-content">
+                            {pageContent.cusReviewContent3}"
+                            <br/>
+                            <span className="customer-content-name">
+                                {pageContent.cusReview3}
+                            </span>
+                        </div>
+                        <div className="customer-content">
+                            "{pageContent.cusReviewContent4}"
+                            <br/>
+                            <span className="customer-content-name">
+                                {pageContent.cusReview4}
+                            </span>
+                        </div>
+                        <div className="customer-content">
+                            "{pageContent.cusReviewContent5}"
+                            <br/>
+                            <span className="customer-content-name">
+                                {pageContent.cusReview5}
+                            </span>
+                        </div> 
+                    </div>
                 </div>    
                 <div className="button">
                     
