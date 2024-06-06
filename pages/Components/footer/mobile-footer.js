@@ -6,9 +6,9 @@ import { menu } from '/pages/core/info';
 import { serviceCategory } from '/pages/core/info';
 import { processedInfo } from '/pages/core/info';
 import { imageAlt } from '/pages/core/info';
-import { changedInfo } from '/pages/core/info';
 import { images } from '/pages/core/info';
 import { pageContent } from '/pages/core/info';
+import { changedInfo } from '/pages/core/info';
 
 export default function MobileFooter(){
     return(

@@ -60,26 +60,26 @@ serviceList
   */
 const businessOpeningTimeInput = {
   //Thời gian làm việc của tiệm
-  monOpeningTime: "09:00 AM",
-  monClosingTime: "06:30 PM",
+  monOpeningTime: "09:00",
+  monClosingTime: "18:30",
 
-  tueOpeningTime: "09:00 AM",
-  tueClosingTime: "06:30 PM",
+  tueOpeningTime: "09:00",
+  tueClosingTime: "18:30",
 
-  wedOpeningTime: "09:00 AM",
-  wedClosingTime: "06:30 PM",
+  wedOpeningTime: "09:00",
+  wedClosingTime: "18:30",
 
-  thuOpeningTime: "09:00 AM",
-  thuClosingTime: "06:30 PM",
+  thuOpeningTime: "09:00",
+  thuClosingTime: "18:30",
 
-  friOpeningTime: "09:00 AM",
-  friClosingTime: "06:30 PM",
+  friOpeningTime: "09:00",
+  friClosingTime: "18:30",
 
-  satOpeningTime: "09:00 AM",
-  satClosingTime: "06:30 PM",
+  satOpeningTime: "09:00",
+  satClosingTime: "18:30",
 
-  sunOpeningTime: "10:00 AM",
-  sunClosingTime: "04:00 PM",
+  sunOpeningTime: "10:00",
+  sunClosingTime: "16:00",
 }
 
 const processedBusinessOpeningTime = {
@@ -851,7 +851,7 @@ const images = {
   cusReviewImage5: "/images/nail-salon-customer-review-5-2.jpg",
 
   //Ảnh Footer
-  footerImagePhoneIcon: "/images/icons/icon-phone-product.png",
+  footerImagePhoneIcon: "/images/icons/icon-phone-white.png",
   footerImageMapPointerIcon: "/images/icons/icon-google-maps-pointer.png",
 
   //Phần footer copyright

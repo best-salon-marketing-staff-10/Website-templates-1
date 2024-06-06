@@ -89,14 +89,13 @@
   .services-list-6,
   .services-list-7{
     text-decoration: none;
-    color: #8C96A8;
+    color: #d8d5d9;
   }
   /*Chung cho việc hiển thị khối nội dung của các dịch vụ
   service-1.js
   service-2.js
   ...
-  */
-  .service{
+    .service{
     margin: auto;
     margin-bottom: 30px;
     background-color: #FFFFFF;
@@ -136,16 +135,21 @@
   }
   .homepage-service-content-text{
     position: absolute;
-    bottom: 8px;
+    bottom: 0px;
     left: 0;
     right: 0;
     text-align: center;
+    border: solid 1px;
+    background-color: #000000;
   }
   .homepage-service-content-title{
     margin: auto;
-    color: #00A859;
-    font-size: 35px;
+    color: #ffffff;
+    font-size: 30px;
+    border: solid 1px;
   }
+  */
+
 /*
 */
 
@@ -213,8 +217,8 @@
   /*.button-model-1 và .button-model-2 khác nhau về màu thôi
   */
   .button-model-1{
-    background-image: linear-gradient(to right,  #af893c, #fee1c1 , #af893c);
-    border-color: #ca9a51;
+    background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
+    border-color: #cb9b51;
     border-radius: 5px;
     color: #000000;
     text-align: center;
@@ -229,7 +233,7 @@
     vertical-align: middle;
   }
   .button-model-2{
-    background-color: #000000;
+    background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
     border-radius: 5px;
     color: #ffffff;
     text-align: center;
@@ -248,8 +252,8 @@
     vertical-align: middle;
   }
   .button-2{
-    background-image: linear-gradient(to right,  #af893c, #fee1c1 , #af893c);
-    border-color: #ca9a51;
+    background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
+    border-color: #cb9b51;
     border-radius: 5px;
     color: #000000;
     max-width: max-content;
@@ -262,16 +266,14 @@
   }
 
   /*Các yếu tố chung cho màn hình đầu tiên
-  */
-
-  .first-screen-block{
+    .first-screen-block{
     position: relative;
     line-height: 1.32;
-    margin-top: 85px;
   }
 
   .first-screen-block-anh{
     margin: auto;
+    margin-top: 85px;
     text-align: center;
     border-radius: 0px;
   }
@@ -289,6 +291,9 @@
     -webkit-text-stroke-width: 2px;
     color: #FFFFFF;
   }
+  */
+
+
 
   /*Các list dịch vụ mà ko hiển thị
   */
@@ -302,13 +307,14 @@
 
   /*Các list dịch vụ hiển thị cần phải cách nhau 1 khoảng
   và phải có khoảng cách với bên dưới
-  */
-
-  .service-container{
+    .service-container{
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
+  */
+
+
   
 /*
 3. Phần chế độ hiển thị cho: 
@@ -318,7 +324,7 @@
 */
   /*Chế độ Mobile
   */
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 730px){
     /*Trang Home
     */
       /* index.js
@@ -364,9 +370,92 @@
       position: absolute;
       bottom: 8px;
     }
+    .first-screen-block{
+      position: relative;
+      line-height: 1.32;
+    }
+  
+    .first-screen-block-anh{
+      margin: auto;
+      margin-top: 85px;
+      text-align: center;
+      border-radius: 0px;
+    }
+  
+    .first-screen-block-title{
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      font-family:  'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      -webkit-text-stroke-color: #000000;
+      -webkit-text-stroke-width: 2px;
+      color: #FFFFFF;
+    }
   
   /*Trang About
   */
+
+  /*Hiển thị phần nav-bar
+  */
+  .customer-navbar{
+    position: fixed;
+    border: solid 1px;
+    background-color: #232323;
+    border-bottom: 2px solid #9f7741;
+  }
+  .nav-bar{
+    display: flex; 
+    background-color: #101010;
+  }        
+  .nav-bar-menu{
+    grid-template-columns: 1fr 1fr 1fr ;
+    display: grid;
+    width: 100%;
+  }    
+  .nav-bar-menu-left{
+    background-color: #101010;
+  }   
+  .nav-bar-menu-right{
+    background-color: #101010;
+    display: flex;
+  }   
+  .nav-bar-link-main-menu{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px;
+    
+}    
+  .nav-bar-link-service-category{
+      text-decoration: none;
+      color: #949aa5;
+      font-weight: 500;
+      font-size: 21px;
+  }
+  .nav-bar-services-sub-category{
+      margin-top: 25px;
+  }
+  .nav-bar-services-sub-category-details{
+      text-decoration: none;
+      color: #B0B7C3;
+      font-weight: 500;
+      font-size: 21px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+  }
+  .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+     border-radius: 5px;
+  }
+
+  .navbar-toggler{
+    border-color: #6a6a6a;
+  }
   
   /*Nhấn mạnh 2
   */
@@ -475,11 +564,275 @@
     margin: auto;
   }
 
-  
+  /* Mục Service của trang homepage
+  */
+  .service-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
   }
+  .homepage-mobile-services{
+    background-color: #e5ce9c;
+    padding-top: 50px;
+
+  }
+  .homepage-mobile-services-content{
+    margin-bottom: 30px;
+  }
+  .homepage-mobile-services-content-title{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ac8152;
+  }
+  .homepage-mobile-services-content-description{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+  }
+  .mobile-content{
+    background-color: #e5ce9c;
+  }
+  .service{
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+  }
+  .service-content-anh{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0px;
+    text-align: center;
+    margin: auto;
+  }
+  .service-content-text{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+  .service-content-title{
+  color: #000000;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 25px;
+  }
+  .service-content-description{
+    color: #8A94A6;
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+  }
+  .homepage-service-content{
+    position: relative;
+    line-height: 1.32;
+    max-width: max-content;
+    margin: auto;
+  }
+  .homepage-service-content-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border: solid 1px;
+    background-color: #000000;
+  }
+  .homepage-service-content-title{
+    margin: auto;
+    color: #ffffff;
+    font-size: 30px;
+    border: solid 1px;
+  }
+   /*Logo trong thanh nav-bar
+  */
+    /* logo-nav.js
+    */
+    .logo-container{
+      display: flex;
+    }
+    .logo-container:hover{
+      cursor: pointer;
+    }
+    .logo{
+      margin-bottom: 5px;
+      max-width: 60px;
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .logo-text{
+      line-height: 15px;
+      margin: auto;
+      margin-left: 10px;
+    }
+    .logo-text-1{
+      letter-spacing: 4px;
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .logo-text-2{
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-top: 0px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    
+    /*Customer-reivew
+    */
+    .customer-review{
+      background-color: #000000;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      height: 700px;
+    }
+    .customer-review-title{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      margin-left: 10px;  
+      margin-right: 10px; 
+      color: #ac8152;
+    }
+    .customer-review-carousel-image{
+      max-width: 100%;
+    }
+    .customer-review-description{
+      text-align: center;
+      margin: 10px;
+      color: #ffffff;
+      line-height: 1.6;
+      font-size: 20px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .customer-content{
+      font-size: 25px;
+      font-family: 'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      text-align: center;
+      color: #ffffff;
+      margin: 30px;
+      padding: 30px;
+      border: solid 5px #ebb16b;
+      height: 500px;
+      
+    }
+    .customer-content-name{
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-style: initial;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    /* Phần footer
+    */
+    .footer-logo{
+      margin-left: 10px;
+      padding-top: 50px;
+    }
+    .footer-icon-image{
+      width: 40px;
+      background-color: #ac8152;
+      padding: 5px;
+    }
+    .footer-image{
+      max-width: 20px;
+    }
+    .footer{
+      background-color: #0e0d13;
+    }
+    .divider{
+      margin-top: 20px;
+      color: #787878;
+    }
+    .footer-navigation-item{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-location{
+      margin-top: 50px;
+    }
+    .footer-navigation-item-map{
+      text-decoration: none;
+      border: solid 5px;
+      border-color: #ac8152;
+      max-width: max-content;
+      text-align: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 20px;
+    }
+    .footer-navigation-services-detail-services,
+    .footer-navigation-item-detail-services,
+    .footer-navigation-item-details{
+      margin-top: 15px;
+      margin-left: 10px;
+      color: #ffffff;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-details-1,
+    .footer-navigation-item-details-2{
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .footer-navigation-item-details-1:hover,
+    .footer-navigation-item-details-2:hover,
+    .footer-copyright:hover{
+      cursor: pointer;
+    }
+
+    .footer-copyright{
+      margin-top: 20px;
+      padding-bottom: 20px;
+      color: #787878;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+    } 
+
+    /*Phần time-schedule
+    */
+    .time-schedule{
+      margin-bottom: 20px;
+    }
+    .time-schedule-title{
+      margin-bottom: 10px;
+      margin-left: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 28px;
+      color: #ffffff;
+    }
+
+    .time-schedule-description{
+      margin: 17px;
+      line-height: 1.6;
+      font-size: 19px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #d8d5d9;
+    }
+}
   /*Chế độ Tablet
   */
-  @media screen and (min-width: 481px) and (max-width: 1024px){
+  @media screen and (min-width: 731px) and (max-width: 1024px){
     /*Trang Home
     */
       /* index.js
@@ -551,7 +904,582 @@
       display:grid;
       grid-template-columns: 1fr 1fr;
     }
+    /* Hiển thị phần top-bar 
+    */
+    .top-bar-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
+    }
+    /* Hiển thị phần logo-nav-bar
+    */
+    .logo-container{
+      position: absolute;
+      top: 10px;
+      left: calc(55% - 135px);
+      display: grid;
+      width: 210px;
+      height: 120px;
+      background-color: #232323;
+      background-image: url(/images/bg-logo-corner.jpg), url(/images/bg-logo-corner2.jpg), url(/images/bg-logo-corner3.jpg), url(/images/bg-logo-corner4.jpg), url(/images/bg-logo-line.jpg), url(/images/bg-logo-line2.jpg), url(/images/bg-logo-line3.jpg), url(/images/bg-logo-line4.jpg);
+      background-position: left top, top right, right bottom, bottom left, left center, top center, right center, bottom center;
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-x, repeat-y, repeat-x;
+
+    }
+    .logo-container:hover{
+      cursor: pointer;
+    }
+    .logo{
+      max-width: 60px;
+      margin: auto;
+    }
+    .logo-text{
+      line-height: 15px;
+      margin: auto;
+      text-align: center;
+    }
+    .logo-text-1{
+      letter-spacing: 4px;
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .logo-text-2{
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    /* Hiển thị phần nav-bar
+    */
+    .nav-bar{
+      display: flex; 
+      background-color: #101010;
+    }        
+    .nav-bar-menu{
+      grid-template-columns: 1fr 1fr 1fr ;
+      display: grid;
+      width: 100%;
+      margin-bottom: 15px;
+    }    
+    .nav-bar-menu-left{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      background-color: #101010;
+      text-align: end;
+    }   
+    .nav-bar-menu-right{
+      background-color: #101010;
+      text-align: start;
+    }   
+    .nav-bar-main-category-right{
+      max-width: max-content;
+      text-align: start;
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+    .nav-bar-link-main-menu{
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 18px;
+    }    
+    .nav-bar-link-service-category{
+        text-decoration: none;
+        color: #949aa5;
+        font-weight: 500;
+        font-size: 21px;
+    }
+    .nav-bar-services-sub-category{
+        margin-top: 25px;
+    }
+    .nav-bar-services-sub-category-details{
+        text-decoration: none;
+        color: #B0B7C3;
+        font-weight: 500;
+        font-size: 21px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+       border-radius: 5px;
+    }
+  
+    .navbar-toggler{
+      border-color: #6a6a6a;
+    }
+
+    /*Màn hình đầu tiên
+    */
+    .first-screen-block-bottom{
+      position: absolute;
+      bottom: 8px;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+    }
+    .first-screen-block{
+      position: relative;
+      line-height: 1.32;
+    }
+  
+    .first-screen-block-anh{
+      margin: auto;
+      text-align: center;
+      border-radius: 0px;
+    }
+  
+    .first-screen-block-title{
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 34px;
+      font-family:  'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      -webkit-text-stroke-color: #000000;
+      -webkit-text-stroke-width: 2px;
+      color: #FFFFFF;
+    }
+
+     /* Nhấn mạnh 2
+    */
+    .nhan-manh-2-background{
+      background-color: #181616;
+    }
+    .nhan-manh-2-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 30px;
+    }
+    .nhan-manh-content-wrapper{
+      margin: auto;
+    }
+    .nhan-manh-content-header{
+      color: #ac8152;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .nhan-manh-content-description{
+      color: #ffffff;
+      font-size: 18px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .nhan-manh-2-desktop-image{
+      max-width: 80%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .nhan-manh-2-button{
+      margin-left: 30px;
+    }
+   /* Nhấn mạnh 3
+    */
+    .nhan-manh-3-desktop-background{
+      background-color: #f3e5be;
+    }
+    .nhan-manh-3-content{
+      text-align: center;
+      padding-top: 50px;
+    }
+    .nhan-manh-3-desktop-content-header{
+      color: #ac8152;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .nhan-manh-3-desktop-content-description{
+      max-width: 700px;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .nhan-manh-3-desktop-images{
+      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: max-content;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    .nhan-manh-3-image{
+      max-width: 30%;
+    }
       
+        /* Nhấn mạnh 4
+    */
+    .nhan-manh-4-background{
+      background-color: #000000;
+    }
+    .nhan-manh-4-content-header{
+      color: #ac8152;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .nhan-manh-4-content-description{
+      color: #ffffff;
+      width: 700px;
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .nhan-manh-4-content-image{
+      display: flex;
+      max-width: max-content;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    .nhan-manh-4-content-image-1{
+      max-width: 40%;
+    }
+    .nhan-manh-4-content-image-2{
+      max-width: 40%;
+    }
+    .nhan-manh-4-content-2{
+      background-color: #181616;
+      padding-bottom: 50px;
+    }
+    .nhan-manh-4-content-header-4{
+      text-align: center;
+      color: #ac8152;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      padding-top: 40px;
+    }
+    .nhan-manh-4-content-2-images{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: max-content;
+      margin: auto;
+    }
+    .nhan-manh-4-content-2-image{
+      max-width: 220px;
+      margin: 10px;
+      border: solid 3px #ac8152;
+    }
+    /* Button-2
+    */
+    .button-2{
+      margin: auto;
+      margin-top: 20px;
+    }
+        /* Customer-review
+    */
+    .customer-review{
+      background-color: #000000;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      height: 440px;
+    }
+    .customer-review-title{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      margin-left: 10px;  
+      margin-right: 10px; 
+      color: #ac8152;
+    }
+    .customer-review-description{
+      text-align: center;
+      margin: 10px;
+      color: #ffffff;
+      line-height: 1.6;
+      font-size: 20px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .customer-review-content{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .customer-content{
+      font-size: 25px;
+      font-family: 'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      text-align: center;
+      color: #ffffff;
+      margin: auto;
+      border: solid 5px #ebb16b;
+      max-width: 800px;
+      height: 300px;
+    }
+    .customer-content-name{
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-style: initial;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .content{
+      color: #ffffff;
+      max-width: max-content;
+      margin: auto;
+      margin-top: 50px;
+    }
+        /* Phần service trang homepage
+    */
+    .service-container{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+    .homepage-desktop-services{
+      background-color: #f4e4bf;
+      text-align: center;
+    }
+
+    .homepage-desktop-services-content-title{
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #ac8152;
+      padding-top: 50px;
+    }
+    .homepage-desktop-services-content-description{
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 30px;
+    }
+    .homepage-desktop-services-list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .service{
+      margin: auto;
+      margin-bottom: 30px;
+      background-color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+    .service-content-text{
+      margin-top: 35px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+  
+    }
+    .service-content-title{
+    color: #000000;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+    }
+    .service-content-description{
+      color: #8A94A6;
+      line-height: 1.8;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+    }
+    .homepage-service-content{
+      position: relative;
+      line-height: 1.32;
+      margin: auto;
+      max-width: max-content;
+    }
+    .homepage-service-content-text{
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #000000;
+    }
+    .homepage-service-content-title{
+      margin: auto;
+      color: #ffffff;
+      font-size: 25px;
+    }
+
+        /* Phần footer
+    */
+    /*Phần logo-footer
+    */
+    .footer-logo-container{
+      display: flex;
+      margin-top: 20px;
+    }
+    .footer-logo-container:hover{
+      cursor: pointer;
+    }
+    .footer-logo{
+      margin-bottom: 5px;
+      max-width: 60px;
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .footer-logo-text{
+      line-height: 15px;
+      margin: auto;
+      margin-left: 20px;
+      color: #ffffff;
+    }
+    .footer-logo-text-1{
+      letter-spacing: 4px;
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-weight: 500;
+    }
+    .footer-logo-text-2{
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-top: 0px;
+      font-weight: 700;
+    }
+    .footer-logo{
+      margin-left: 10px;
+      padding-top: 10px;
+    }
+
+    /* Các thành phần còn lại của footer
+    */
+    .footer-block{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer-icon-image{
+      width: 40px;
+      background-color: #ac8152;
+      padding: 5px;
+    }
+    .footer-image-block{
+      height: 40px;
+      width: 40px;
+      background-color: #ac8152;
+    }
+    .footer-image-1{
+      max-width: 20px;
+      margin-top: 10px;
+    }
+    .footer-image-2{
+      max-width: 20px;
+      margin-top: 5px;
+    }
+    .footer{
+      background-color: #0e0d13;
+    }
+    .divider{
+      margin-top: 20px;
+      color: #787878;
+    }
+    .footer-navigation-item{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 23px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-location{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+      text-align: start;
+      margin: auto;
+    }
+    .footer-location{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-iframe-map{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .footer-navigation-item-location{
+      margin-top: 50px;
+    }
+    .footer-navigation-item-map{
+      max-width: max-content;
+
+      margin-top: 20px;
+      border: solid 5px;
+      border-color: #ac8152;
+    }
+    .footer-navigation-services-detail-services,
+    .footer-navigation-item-detail-services,
+    .footer-navigation-item-details{
+      margin-top: 15px;
+      margin-left: 5px;
+      color: #ffffff;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 500;
+      font-size: 17px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-details-1,
+    .footer-navigation-item-details-2{
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .footer-navigation-item-details-1:hover,
+    .footer-navigation-item-details-2:hover,
+    .footer-copyright:hover{
+      cursor: pointer;
+    }
+
+    .footer-copyright{
+      margin-top: 20px;
+      padding-bottom: 20px;
+      color: #787878;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+    } 
+
+    /* Phần time-schedule
+    */
+    .time-schedule{
+      margin-bottom: 20px;
+    }
+    .time-schedule-title{
+      margin-bottom: 10px;
+      margin-left: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      color: #ffffff;
+    }
+
+    .time-schedule-description{
+      margin: 10px;
+      line-height: 1.6;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #d8d5d9;
+    }
+
   }
   /*Chế độ Desktop
   */
@@ -599,14 +1527,15 @@
         display: none;
       }
     
-    /*Top Bar Desktop cho nút Call now vào giữa
+    /*Top Bar Desktop cho nút Call now vào giữac
     thongTinTiem2.callTiem
     thongTinTiem2.linkBookingTiem
     Chỉ cần mỗi cái wrapper này còn lại theo khuôn top-bar như thường
     */
     .top-bar-wrapper{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
     }
     /*Màn hình đầu tiên, giao diện desktop, cho chữ và nút lên trên ảnh, ở giữa màn hình theo chiều dọc, và để về 1 nửa bên trái của màn hình
     */
@@ -617,22 +1546,46 @@
       width: 50%;
       height: 50%;
     }
-
+    .first-screen-block{
+      position: relative;
+      line-height: 1.32;
+    }
+  
+    .first-screen-block-anh{
+      margin: auto;
+      text-align: center;
+      border-radius: 0px;
+    }
+  
+    .first-screen-block-title{
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 34px;
+      font-family:  'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      -webkit-text-stroke-color: #000000;
+      -webkit-text-stroke-width: 2px;
+      color: #FFFFFF;
+    }
     /*Hiển thị danh sách các dịch vụ trong trang service, màn hình tablet, 
     services -> tablet-content.js
     Chia 2 cột
     */
     .homepage-desktop-dong-vien{
-      max-width: 900px;
+      max-width: 100%;
       margin: auto;
     }
 
     /*Hiển thị danh sách dịch vụ ở trang homepage, giao diện tablet, chia 2 cột
-    */
-    .homepage-desktop-services{
+       .homepage-desktop-services{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
     }
+    */
+ 
     /*Hiển thị danh sách các dịch vụ trong trang service, màn hình desktop, 
     services -> desktop-content.js
     Chia 3 cột
@@ -663,6 +1616,588 @@
       display:grid;
       grid-template-columns: 1fr 1fr;
     }
+    .nav-bar{
+      display: grid; 
+      background-color: #101010;
+      height: 100px;
+    }            
+    .nav-bar-menu-left{
+        margin: auto;
+        background-color: #101010;
+        display: flex;
+        margin-right: 0px;
+    }   
+    .nav-bar-menu-right{
+      margin: auto;
+      background-color: #101010;
+      display: flex;
+      margin-left: 0px;
+  } 
+    .nav-bar-link-main-menu{
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 25px;
+  }    
+    .nav-bar-link-service-category{
+        text-decoration: none;
+        color: #949aa5;
+        font-weight: 500;
+        font-size: 21px;
+    }
+    .nav-bar-services-sub-category-details{
+        text-decoration: none;
+        color: #B0B7C3;
+        font-weight: 500;
+        font-size: 21px;
+        margin-left: 15px;
+    }
+    .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+       border-radius: 5px;
+    }
+
+    .navbar-toggler{
+      border-color: #6a6a6a;
+    }
+    /* Hiển thị phần logo
+    */
+    .logo-container{
+      position: absolute;
+      top: 0px;
+      left: calc(50% - 120px);
+      display: grid;
+      width: 200px;
+      height: 130px;
+      background-color: #232323;
+      background-image: url(/images/bg-logo-corner.jpg), url(/images/bg-logo-corner2.jpg), url(/images/bg-logo-corner3.jpg), url(/images/bg-logo-corner4.jpg), url(/images/bg-logo-line.jpg), url(/images/bg-logo-line2.jpg), url(/images/bg-logo-line3.jpg), url(/images/bg-logo-line4.jpg);
+      background-position: left top, top right, right bottom, bottom left, left center, top center, right center, bottom center;
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-x, repeat-y, repeat-x;
+
+    }
+    .logo-container:hover{
+      cursor: pointer;
+    }
+    .logo{
+      max-width: 60px;
+      margin: auto;
+    }
+    .logo-text{
+      line-height: 15px;
+      margin: auto;
+      text-align: center;
+    }
+    .logo-text-1{
+      letter-spacing: 4px;
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .logo-text-2{
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    /*Hiển thị phần nav-bar
+    */
+    .customer-navbar{
+      position: fixed;
+      border: solid 1px;
+      background-color: #232323;
+      border-bottom: 2px solid #9f7741;
+    }
+    .nav-bar{
+      display: flex; 
+      background-color: #101010;
+    }        
+    .nav-bar-menu{
+      grid-template-columns: 1fr 1fr 1fr ;
+      display: grid;
+      width: 100%;
+    }    
+    .nav-bar-menu-left{
+      background-color: #101010;
+    }   
+    .nav-bar-menu-right{
+      background-color: #101010;
+      display: flex;
+    }   
+    .nav-bar-link-main-menu{
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 18px;
+      margin: 20px;
+  }    
+    .nav-bar-link-service-category{
+        text-decoration: none;
+        color: #949aa5;
+        font-weight: 500;
+        font-size: 21px;
+    }
+    .nav-bar-services-sub-category{
+        margin-top: 25px;
+    }
+    .nav-bar-services-sub-category-details{
+        text-decoration: none;
+        color: #B0B7C3;
+        font-weight: 500;
+        font-size: 21px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .navbar-toggler-icon {
+       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+       border-radius: 5px;
+    }
+  
+    .navbar-toggler{
+      border-color: #6a6a6a;
+    }
+    /* Nhấn mạnh 2
+    */
+    .nhan-manh-2-background{
+      background-color: #181616;
+    }
+    .nhan-manh-2-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 30px;
+    }
+    .nhan-manh-content-wrapper{
+      margin: auto;
+    }
+    .nhan-manh-content-header{
+      color: #ac8152;
+      
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+      margin-top: 50px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .nhan-manh-content-description{
+      color: #ffffff;
+      font-size: 18px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .nhan-manh-2-desktop-image{
+      max-width: 60%;
+      margin-top: 30px;
+    }
+    .nhan-manh-2-button{
+      margin-left: 30px;
+    }
+
+    /* Nhấn mạnh 3
+    */
+    .nhan-manh-3-desktop-background{
+      background-color: #f3e5be;
+    }
+    .nhan-manh-3-content{
+      text-align: center;
+      padding-top: 50px;
+    }
+    .nhan-manh-3-desktop-content-header{
+      color: #ac8152;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .nhan-manh-3-desktop-content-description{
+      max-width: 700px;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .nhan-manh-3-desktop-images{
+      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: max-content;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    .nhan-manh-3-image{
+      max-width: 30%;
+
+    }
+
+    /* Nhấn mạnh 4
+    */
+    .nhan-manh-4-background{
+      background-color: #000000;
+    }
+    .nhan-manh-4-content-header{
+      color: #ac8152;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    .nhan-manh-4-content-description{
+      color: #ffffff;
+      width: 700px;
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .nhan-manh-4-content-image{
+      display: flex;
+      max-width: max-content;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    .nhan-manh-4-content-image-1{
+      max-width: 40%;
+    }
+    .nhan-manh-4-content-image-2{
+      max-width: 40%;
+    }
+    .nhan-manh-4-content-2{
+      background-color: #181616;
+      padding-bottom: 50px;
+    }
+    .nhan-manh-4-content-header-4{
+      text-align: center;
+      color: #ac8152;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      padding-top: 40px;
+    }
+    .nhan-manh-4-content-2-images{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: max-content;
+      margin: auto;
+    }
+    .nhan-manh-4-content-2-image{
+      max-width: 300px;
+      margin: 10px;
+      border: solid 3px #ac8152;
+    }
+
+    /* Button-2
+    */
+    .button-2{
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    /* Customer-review
+    */
+    .customer-review{
+      background-color: #000000;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      height: 500px;
+    }
+    .customer-review-title{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      margin-left: 10px;  
+      margin-right: 10px; 
+      color: #ac8152;
+    }
+    .customer-review-description{
+      text-align: center;
+      margin: 10px;
+      color: #ffffff;
+      line-height: 1.6;
+      font-size: 20px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .customer-content{
+      font-size: 25px;
+      font-family: 'Roboto', sans-serif ;
+      font-style: italic;
+      font-kerning: none;
+      text-align: center;
+      color: #ffffff;
+      width: 1000px;
+      margin: auto;
+      border: solid 5px #ebb16b;
+      height: 300px;
+    }
+    .customer-content-name{
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-style: initial;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    .content{
+      color: #ffffff;
+      max-width: max-content;
+      margin: auto;
+      margin-top: 80px;
+    }
+
+    /* Phần service trang homepage
+    */
+    .service-container{
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 30px;
+    }
+    .homepage-desktop-services{
+      background-color: #f4e4bf;
+      text-align: center;
+    }
+
+    .homepage-desktop-services-content-title{
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #ac8152;
+      padding-top: 50px;
+    }
+    .homepage-desktop-services-content-description{
+      font-size: 18px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 30px;
+    }
+    .homepage-desktop-services-list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .service{
+      margin: auto;
+      margin-bottom: 30px;
+      background-color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+    .service-content-text{
+      margin-top: 35px;
+      margin-bottom: 30px;
+      margin-left: 30px;
+      margin-right: 30px;
+  
+    }
+    .service-content-title{
+    color: #000000;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 25px;
+    }
+    .service-content-description{
+      color: #8A94A6;
+      line-height: 1.8;
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+    }
+    .homepage-service-content{
+      position: relative;
+      line-height: 1.32;
+      margin: auto;
+      max-width: max-content;
+    }
+    .homepage-service-content-text{
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #000000;
+    }
+    .homepage-service-content-title{
+      margin: auto;
+      color: #ffffff;
+      font-size: 30px;
+    }
+
+    /* Phần footer
+    */
+    /*Phần logo-footer
+    */
+    .footer-logo-container{
+      display: flex;
+      margin-top: 20px;
+    }
+    .footer-logo-container:hover{
+      cursor: pointer;
+    }
+    .footer-logo{
+      margin-bottom: 5px;
+      max-width: 60px;
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+    .footer-logo-text{
+      line-height: 15px;
+      margin: auto;
+      margin-left: 20px;
+      color: #ffffff;
+    }
+    .footer-logo-text-1{
+      letter-spacing: 4px;
+      font-size: 16px;
+      margin-bottom: 0px;
+      font-weight: 500;
+    }
+    .footer-logo-text-2{
+      letter-spacing: 2px;
+      font-size: 11px;
+      margin-top: 0px;
+      font-weight: 700;
+    }
+    .footer-logo{
+      margin-left: 10px;
+      padding-top: 10px;
+    }
+
+    /* Các thành phần còn lại của footer
+    */
+    .footer-block{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer-icon-image{
+      width: 40px;
+      background-color: #ac8152;
+      padding: 5px;
+    }
+    .footer-image-block{
+      height: 40px;
+      width: 30px;
+      background-color: #ac8152;
+    }
+    .footer-image-1{
+      max-width: 20px;
+      margin-top: 10px;
+    }
+    .footer-image-2{
+      max-width: 20px;
+      margin-top: 5px;
+    }
+    .footer{
+      background-color: #0e0d13;
+    }
+    .divider{
+      margin-top: 20px;
+      color: #787878;
+    }
+    .footer-navigation-item{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-location{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+      max-width: 1500px;
+      text-align: start;
+      margin: auto;
+    }
+    .footer-location{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-iframe-map{
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .footer-navigation-item-location{
+      margin-top: 50px;
+    }
+    .footer-navigation-item-map{
+      margin: auto;
+      max-width: max-content;
+    }
+    .iframe-map{
+      margin-top: 20px;
+      border: solid 5px;
+      border-color: #ac8152;
+    }
+    .footer-navigation-services-detail-services,
+    .footer-navigation-item-detail-services,
+    .footer-navigation-item-details{
+      margin-top: 15px;
+      margin-left: 10px;
+      color: #ffffff;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-details-1,
+    .footer-navigation-item-details-2{
+      display: flex;
+      margin-bottom: 15px;
+    }
+    .footer-navigation-item-details-1:hover,
+    .footer-navigation-item-details-2:hover,
+    .footer-copyright:hover{
+      cursor: pointer;
+    }
+
+    .footer-copyright{
+      margin-top: 20px;
+      padding-bottom: 20px;
+      color: #787878;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+    } 
+    /*Phần time-schedule
+    */
+    .time-schedule{
+      margin-bottom: 20px;
+    }
+    .time-schedule-title{
+      margin-bottom: 10px;
+      margin-left: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 28px;
+      color: #ffffff;
+    }
+
+    .time-schedule-description{
+      margin: 17px;
+      line-height: 1.6;
+      font-size: 19px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #d8d5d9;
+    }
+
+
+
   }
   
 /*
@@ -723,25 +2258,31 @@
     /*mobile-top-bar.js
     */
     .top-bar{
-      background-color: #FFFFFF;
       margin-left: 10px;
       margin-right: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
       display: flex;
     }
-    .top-bar-item-left,
-    .top-bar-item-right{
-      background-color: #23d1ff;
-      border: none;
-      color: #000000;
-      font-weight: 500;
-      margin: auto;
+    .top-bar-item-left{
+      text-align: end;
+      color: #ffffff;
       padding-left: 5px;
       padding-right: 5px;
       padding-bottom: 3px;
       padding-top: 3px;
       border-radius: 5px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .top-bar-item-right{
+      color: #ffffff;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-bottom: 3px;
+      padding-top: 3px;
+      border-radius: 5px;
+      text-align: start;
+      font-family: 'Times New Roman', Times, serif;
     }
     .top-bar-right{
       right: 10px;
@@ -750,90 +2291,66 @@
       flex: 1;
     }
   /*Thanh nav bar, dùng chung cho cả 3 giao diện, nội dung của chúng chỉ khác nhau ở chỗ trỏ đến link id khác nhau để đảm bảo trải nghiệm trơn mượt khi chọn dịch vụ qua thanh nav bar
-  */
-
-    .customer-navbar{
-      position: fixed;
-      border: solid 1px;
-      background-color: #00A859;
-      border-bottom: 2px solid #9f7741;
-    }
-    .nav-bar{
-      display: grid; 
-      margin-left: 10px;
-    }            
-    .nav-bar-menu{
-        margin: auto;
-        margin-right: 0px;
-        top: 0px;
-    }   
-    .nav-bar-link-main-menu{
-      text-decoration: none;
-      color: #8A94A6;
-      font-weight: 500;
-      font-size: 25px;
+  .customer-navbar{
+    position: fixed;
+    border: solid 1px;
+    background-color: #232323;
+    border-bottom: 2px solid #9f7741;
+  }
+  .nav-bar{
+    display: flex; 
+    background-color: #101010;
+  }        
+  .nav-bar-menu{
+    grid-template-columns: 1fr 1fr 1fr ;
+    display: grid;
+    width: 100%;
   }    
-    .nav-bar-link-service-category{
-        text-decoration: none;
-        color: #949aa5;
-        font-weight: 500;
-        font-size: 21px;
-    }
-    .nav-bar-services-sub-category{
-        margin-top: 25px;
-    }
-    .nav-bar-services-sub-category-details{
-        text-decoration: none;
-        color: #B0B7C3;
-        font-weight: 500;
-        font-size: 21px;
-        margin-left: 15px;
-        margin-bottom: 10px;
-    }
-    .navbar-toggler-icon {
-       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-       border-radius: 5px;
-    }
-
-    .navbar-toggler{
-      border-color: #6a6a6a;
-    }
-  
-  /*Logo trong thanh nav-bar
-  */
-    /* logo-nav.js
-    */
-    .logo-container{
-      display: flex;
-    }
-    .logo-container:hover{
-      cursor: pointer;
-    }
-    .logo{
-      margin-bottom: 5px;
-      max-width: 60px;
-      padding-left: 0px;
-      margin-left: 0px;
-    }
-    .logo-text{
-      line-height: 15px;
-      margin: auto;
-      margin-left: 10px;
-    }
-    .logo-text-1{
-      letter-spacing: 4px;
-      font-size: 16px;
-      margin-bottom: 0px;
+  .nav-bar-menu-left{
+    background-color: #101010;
+  }   
+  .nav-bar-menu-right{
+    background-color: #101010;
+    display: flex;
+  }   
+  .nav-bar-link-main-menu{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px;
+    
+}    
+  .nav-bar-link-service-category{
+      text-decoration: none;
+      color: #949aa5;
       font-weight: 500;
-      color: #000000;
-    }
-    .logo-text-2{
-      letter-spacing: 2px;
-      font-size: 11px;
-      margin-top: 0px;
-      font-weight: 700;
-      color: #000000;
-    }
+      font-size: 21px;
+  }
+  .nav-bar-services-sub-category{
+      margin-top: 25px;
+  }
+  .nav-bar-services-sub-category-details{
+      text-decoration: none;
+      color: #B0B7C3;
+      font-weight: 500;
+      font-size: 21px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+  }
+  .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+     border-radius: 5px;
+  }
+
+  .navbar-toggler{
+    border-color: #6a6a6a;
+  }
+  */
+
+  
+  
+ 
   /*Phần Động Viên 1
   */
     /* dong-vien-1.js
@@ -1093,29 +2610,27 @@
 
   /*Phần TimeSchedule Thời gian làm việc của tiệm
   */
-    /*time-schedule.js
-    */
-    .time-schedule{
-      padding-bottom: 10px;
+    /*time-schedule.jsfooter-navigation-item
+        .time-schedule{
       margin-bottom: 20px;
-      background-color: #FFFFFF;
     }
     .time-schedule-title{
-      text-align: center;
       margin-bottom: 10px;
-      font-family: Inter;
-      font-size: 25px;
-      font-weight: 700;
-      color: #000000;
+      margin-left: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 28px;
+      color: #ffffff;
     }
 
     .time-schedule-description{
-      text-align: center;
-      margin: 10px;
+      margin: 17px;
       line-height: 1.6;
-      font-size: 20px;
-      font-family: Noto Sans;
+      font-size: 19px;
+      font-family: 'Times New Roman', Times, serif;
+      color: #d8d5d9;
     }
+    */
+
   /*Phần Offer của tiệm
   */
     /*offers.js
@@ -1167,22 +2682,21 @@
   /*Phần Customer Review của tiệm
   */
     /* customer-review.js
-    */
     .customer-review{
-      background-color: #FFFFFF;
+      background-color: #000000;
       padding-bottom: 30px;
       padding-top: 30px;
-      margin-bottom: 50px;
+      height: 700px;
     }
     .customer-review-title{
       text-align: center;
-      font-family: Inter;
+      font-family: 'Times New Roman', Times, serif;
       font-size: 35px;
-      color: #000000;
       font-weight: 700;
       margin-bottom: 0px;
       margin-left: 10px;  
       margin-right: 10px; 
+      color: #ac8152;
     }
     .customer-review-carousel-image{
       max-width: 100%;
@@ -1190,7 +2704,7 @@
     .customer-review-description{
       text-align: center;
       margin: 10px;
-      color: #8A94A6;
+      color: #ffffff;
       line-height: 1.6;
       font-size: 20px;
       font-style: italic;
@@ -1202,15 +2716,25 @@
       font-style: italic;
       font-kerning: none;
       text-align: center;
+      color: #ffffff;
       margin: 30px;
+      padding: 30px;
+      border: solid 5px #ebb16b;
+      height: 500px;
     }
     .customer-content-name{
-      font-size: 28px;
+      font-size: 30px;
       font-family: 'Roboto', sans-serif;
       font-style: initial;
-      font-weight: bold;
-      color: #A4319B;
+      font-weight: 500;
+      color: #ffffff;
     }
+    .content{
+      margin-top: 100px;
+      color: #ffffff;
+    }
+    */
+    
   /*Phần content của our-policy
   */
     /*content-our-policy.js
@@ -1238,34 +2762,58 @@
   /*Phần Footer
   */
     /*footer
-    */
+    .footer-logo{
+      margin-left: 10px;
+      padding-top: 50px;
+    }
+    .footer-icon-image{
+      width: 40px;
+      background-color: #ac8152;
+      padding: 5px;
+    }
     .footer-image{
       max-width: 20px;
     }
     .footer{
-      margin-top: 50px;
-      margin-bottom: 100px;
-      margin-left: 10px;
-      margin-right: 10px;
+      background-color: #0e0d13;
     }
     .divider{
-      color: #23d1ff;
+      margin-top: 20px;
+      color: #787878;
     }
     .footer-navigation-item{
-      color: #424A59;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 28px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-top: 20px;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+    .footer-navigation-item-location{
+      margin-top: 50px;
+    }
+    .footer-navigation-item-map{
+      color: #ffffff;
       font-weight: 500;
       font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
       margin-top: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       text-decoration: none;
+      border: solid 5px;
+      border-color: #ac8152;
     }
     .footer-navigation-services-detail-services,
     .footer-navigation-item-detail-services,
     .footer-navigation-item-details{
       margin-top: 15px;
       margin-left: 10px;
-      color: #8C96A8;
+      color: #ffffff;
+      font-family: 'Times New Roman', Times, serif;
       font-weight: 500;
-      font-size: 19px;
+      font-size: 18px;
       text-decoration: none;
     }
     .footer-navigation-item-details-1,
@@ -1280,13 +2828,14 @@
     }
 
     .footer-copyright{
-      margin-top: 100px;
-      margin-bottom: 10px;
-      color: #96A0AF;
-      font-weight: 500;
-      font-size: 20px;
+      margin-top: 20px;
+      color: #787878;
+      font-size: 18px;
+      text-align: center;
       text-decoration: none;
     } 
+    */
+    
   /*Phần Our Story, chủ yếu dùng trong trang About
   */
   /*our-story.js
@@ -1304,4 +2853,3 @@
     line-height: 2;
     font-size: 20px;
   }
-

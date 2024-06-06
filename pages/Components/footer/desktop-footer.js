@@ -10,9 +10,6 @@ import { changedInfo } from '/pages/core/info';
 import { images } from '/pages/core/info';
 import { pageContent } from '/pages/core/info';
 
-
-
-
 export default function DesktopFooter(){
     return(
         <>

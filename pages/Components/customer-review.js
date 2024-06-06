@@ -27,45 +27,52 @@ export default function CustomerReview() {
                     </div>
                 </div>
                 
-                <div className="customer-review-content">
-                    <div className="customer-review-content-slider">
-                        <div className="customer-content">
-                            "{pageContent.cusReviewContent1}"
-                            <br/>
-                            <span className="customer-content-name">
-                                {pageContent.cusReview1}
-                            </span> 
-                        </div>
-                        <div className="customer-content">
-                            "{pageContent.cusReviewContent2}"
-                            <br/>
-                            <span className="customer-content-name">
-                                {pageContent.cusReview2}
-                            </span>
-                        </div>
-                        <div className="customer-content">
-                            {pageContent.cusReviewContent3}"
-                            <br/>
-                            <span className="customer-content-name">
-                                {pageContent.cusReview3}
-                            </span>
-                        </div>
-                        <div className="customer-content">
-                            "{pageContent.cusReviewContent4}"
-                            <br/>
-                            <span className="customer-content-name">
-                                {pageContent.cusReview4}
-                            </span>
-                        </div>
-                        <div className="customer-content">
-                            "{pageContent.cusReviewContent5}"
-                            <br/>
-                            <span className="customer-content-name">
-                                {pageContent.cusReview5}
-                            </span>
-                        </div> 
+                <div className="customer-review-content-block">
+                    <div className="customer-review-content">
+                        <Carousel controls={false} interval="2000">
+                            <Carousel.Item>
+                                <div className="customer-content">
+                                    <div className="content">
+                                        {pageContent.cusReviewContent1}
+                                    </div>
+                                    <span className="customer-content-name">
+                                        {pageContent.cusReview1}
+                                    </span> 
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <div className="customer-content">
+                                    <div className="content">
+                                        {pageContent.cusReviewContent2}
+                                    </div>
+                                    <span className="customer-content-name">
+                                        {pageContent.cusReview2}
+                                    </span>
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <div className="customer-content">
+                                    <div className="content">
+                                        {pageContent.cusReviewContent3}
+                                    </div>
+                                    <span className="customer-content-name">
+                                        {pageContent.cusReview3}
+                                    </span>
+                                </div>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <div className="customer-content">
+                                    <div className="content">
+                                        {pageContent.cusReviewContent4}
+                                    </div>
+                                    <span className="customer-content-name">
+                                        {pageContent.cusReview4}
+                                    </span> 
+                                </div>
+                            </Carousel.Item>
+                        </Carousel> 
                     </div>
-                </div>    
+                </div>
                 <div className="button">
                     
                 </div>       
@@ -73,3 +80,7 @@ export default function CustomerReview() {
         </>
     )
 }
+
+
+
+

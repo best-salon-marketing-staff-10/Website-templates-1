@@ -30,7 +30,6 @@ export default function TimeSchedule(){
                     </div>
                 </div>
                 <div className="button">
-                    <Button3 />
                 </div>
             </div>
         </>
