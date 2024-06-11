@@ -3,7 +3,7 @@ import { serviceList7 } from '/pages/core/info';
 export default function Service7PriceList(){
     return(
         <>
-        <div className="service-list-7">
+        <div className="services-list-7">
             <div className="price-list-details-services">
                 <div className="price-list-details-services-container">
                     <div className="price-list-details-services-item">

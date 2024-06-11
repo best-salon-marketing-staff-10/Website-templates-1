@@ -53,9 +53,6 @@ export default function Service3(){
                             {pageContent.serviceCategory3Description} 
                         </p>
                     </div>
-                    <div className="button-view-detail-services">
-                        <ButtonViewDetailsService3 />
-                    </div>
                 </div>
             </div>
         </>

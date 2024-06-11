@@ -30,7 +30,7 @@ export default function MobileContent() {
   return (
     <>
         <div className="nav-bar">
-                <div className="nav-bar-menu">
+            <div className="nav-bar-menu">
                 <Navbar expand={false} bg="" fixed="top" className="customer-navbar">
                         <Container className="hamburger" fluid>
                             <LogoNav />
@@ -264,7 +264,7 @@ export default function MobileContent() {
                         <div className="services-list-1">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image" alt={imageAlt.serviceList1Image1Alt} 
+                                    <img alt={imageAlt.serviceList1Image1Alt} 
                                             src={images.serviceList1Image1} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
@@ -279,7 +279,7 @@ export default function MobileContent() {
                         <div className="services-list-2">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image"alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
+                                    <img alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory2}
@@ -293,7 +293,7 @@ export default function MobileContent() {
                         <div className="services-list-3">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image" alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
+                                    <img alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory3}
@@ -307,7 +307,7 @@ export default function MobileContent() {
                         <div className="services-list-4">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image" alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
+                                    <img alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory4}
@@ -321,7 +321,7 @@ export default function MobileContent() {
                         <div className="services-list-5">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image" alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
+                                    <img alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory5}
@@ -335,7 +335,7 @@ export default function MobileContent() {
                         <div className="services-list-6">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image" alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
+                                    <img alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory6}
@@ -349,7 +349,7 @@ export default function MobileContent() {
                         <div className="services-list-7">
                             <div className="service-container">
                                 <div className="homepage-service-content">
-                                    <img className="carousel-image" alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
+                                    <img alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
                                     <div className="homepage-service-content-text">
                                         <h1 className="homepage-service-content-title">
                                         {serviceCategory.serviceCategory7}
@@ -361,6 +361,7 @@ export default function MobileContent() {
                     </Link>
                 </div>
                 <div className="footer">
+                <div className="footer-block">
                 <Link  legacyBehavior href="/">
                     <div className="footer-logo">
                         <LogoNav />
@@ -501,6 +502,8 @@ export default function MobileContent() {
                         </a>
                     </Link>
                 </div>
+                </div>
+                
             </div>
             </div>
     </>

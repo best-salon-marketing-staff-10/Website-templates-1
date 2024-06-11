@@ -75,7 +75,6 @@ export default function DesktopContent() {
                             </a>
                         </Link>
                     </h2>
-                    
                 </div>
                 <div>
                 </div>

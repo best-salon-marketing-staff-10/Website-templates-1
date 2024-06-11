@@ -54,9 +54,6 @@ export default function Service7(){
                             {pageContent.serviceCategory7Description} 
                         </p>
                     </div>
-                    <div className="button-view-detail-services">
-                        <ButtonViewDetailsService7 />
-                    </div>
                 </div>
             </div>
         </>

@@ -98,7 +98,7 @@ export default function Test() {
                 </div>
             </div>
         </div>
-        <div className="desktop-content">
+        <div className="tablet-content">
             <div className="first-screen-block">
                 <img className="first-screen-block-anh" alt={imageAlt.desktopCarouselImage1Alt} src={images.desktopCarouselImage1} />
                 <div className="first-screen-block-bottom">
@@ -109,7 +109,7 @@ export default function Test() {
                     </div>
                 </div>
             </div>
-            <div className="homepage-desktop-dong-vien">
+            <div className="homepage-tablet-dong-vien">
                 <div className="dong-vien-5">
                     <div className="nhan-manh-2-background">
                         <div className="nhan-manh-2-content"> 
@@ -124,24 +124,24 @@ export default function Test() {
                                     <Button1 />
                                 </div>
                             </div>
-                            <div className="nhan-manh-2-desktop-images">
-                                <img className="nhan-manh-2-desktop-image" alt={imageAlt.section5Image1Alt} src={images.section5Image1} />
+                            <div className="nhan-manh-2-tablet-images">
+                                <img className="nhan-manh-2-tablet-image" alt={imageAlt.section5Image1Alt} src={images.section5Image1} />
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="dong-vien-6">
-                    <div className="nhan-manh-3-desktop-background">
+                    <div className="nhan-manh-3-tablet-background">
                         <div className="nhan-manh-3-content">
-                                <div className="nhan-manh-3-desktop-content-wrapper">
-                                    <h2 className="nhan-manh-3-desktop-content-header">
+                                <div className="nhan-manh-3-tablet-content-wrapper">
+                                    <h2 className="nhan-manh-3-tablet-content-header">
                                         {pageContent.section6Heading}
                                     </h2>
-                                    <div className="nhan-manh-3-desktop-content-description">
+                                    <div className="nhan-manh-3-tablet-content-description">
                                         {pageContent.section6Description}
                                     </div>
                                 </div>
-                            <div className="nhan-manh-3-desktop-images">
+                            <div className="nhan-manh-3-tablet-images">
                                     <img className="nhan-manh-3-image" alt={imageAlt.section6Image1Alt} src={images.section6Image1} />
                                     <img className="nhan-manh-3-image" alt={imageAlt.section7Image1Alt} src={images.section7Image1} />
                                     <img className="nhan-manh-3-image" alt={imageAlt.section6Image1Alt} src={images.section7Image2} />
@@ -191,17 +191,17 @@ export default function Test() {
                     <CustomerReview/>
                     </div>
                 </div>
-                <div className="homepage-desktop-services">
-                    <div className="homepage-desktop-services-content">
-                        <div className="homepage-desktop-services-content-title">
+                <div className="homepage-tablet-services">
+                    <div className="homepage-tablet-services-content">
+                        <div className="homepage-tablet-services-content-title">
                             Our Services
                         </div>
-                        <div className="homepage-desktop-services-content-description">
+                        <div className="homepage-tablet-services-content-description">
                             Fall in Love with the Art of Nails
                         </div>
                     </div>
-                    <div className="homepage-desktop-services-list">
-                        <Link legacyBehavior href={button.button6LinkToDesktop}>
+                    <div className="homepage-tablet-services-list">
+                        <Link legacyBehavior href={button.button6LinkToTablet}>
                             <div className="services-list-1">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
@@ -216,7 +216,7 @@ export default function Test() {
                                 </div>
                             </div>
                         </Link>
-                        <Link legacyBehavior href={button.button7LinkToDesktop}>
+                        <Link legacyBehavior href={button.button7LinkToTablet}>
                             <div className="services-list-2">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
@@ -230,7 +230,7 @@ export default function Test() {
                                 </div>
                             </div>
                         </Link>
-                        <Link legacyBehavior href={button.button8LinkToDesktop}>
+                        <Link legacyBehavior href={button.button8LinkToTablet}>
                             <div className="services-list-3">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
@@ -244,7 +244,7 @@ export default function Test() {
                                 </div>
                             </div>
                         </Link>
-                        <Link legacyBehavior href={button.button9LinkToDesktop}>
+                        <Link legacyBehavior href={button.button9LinkToTablet}>
                             <div className="services-list-4">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
@@ -258,7 +258,7 @@ export default function Test() {
                                 </div>
                             </div>
                         </Link>
-                        <Link legacyBehavior href={button.button10LinkToDesktop}>
+                        <Link legacyBehavior href={button.button10LinkToTablet}>
                             <div className="services-list-5">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
@@ -272,7 +272,7 @@ export default function Test() {
                                 </div>
                             </div>
                         </Link>
-                        <Link legacyBehavior href={button.button11LinkToDesktop}>
+                        <Link legacyBehavior href={button.button11LinkToTablet}>
                             <div className="services-list-6">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
@@ -286,7 +286,7 @@ export default function Test() {
                                 </div>
                             </div>
                         </Link>
-                        <Link legacyBehavior href={button.button12LinkToDesktop}>
+                        <Link legacyBehavior href={button.button12LinkToTablet}>
                             <div className="services-list-7">
                                 <div className="service-container">
                                     <div className="homepage-service-content">

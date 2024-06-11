@@ -52,10 +52,7 @@ export default function Service2(){
                             <p className="service-content-description">
                                 {pageContent.serviceCategory2Description}   
                             </p>
-                        </div>
-                        <div className="button-view-detail-services">
-                            <ButtonViewDetailsService2 />
-                        </div>     
+                        </div> 
                     </div>
             </div>
         </>

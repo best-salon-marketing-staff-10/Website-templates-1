@@ -53,9 +53,6 @@ export default function Service4(){
                             {pageContent.serviceCategory4Description} 
                         </p>
                     </div>
-                    <div className="button-view-detail-services">
-                        <ButtonViewDetailsService4 />
-                    </div>
                 </div>
             </div>
         </>
