@@ -12,7 +12,8 @@ import { processedInfo } from '/pages/core/info';
 import { changedInfo } from '/pages/core/info';
 import { button } from '/pages/core/info';
 import { menu } from '/pages/core/info';
-
+import DesktopNavBar from '/pages/Components/nav-bar/desktop-nav-bar.js';
+import DesktopTopBar from '/pages/Components/nav-bar/desktop-top-bar.js';
 
 
 export default function DesktopContent() {
@@ -22,80 +23,12 @@ export default function DesktopContent() {
   }
   return (
     <>
-       <div className="top-bar-wrapper">
-            <Link legacyBehavior href={processedInfo.callBusiness}>
-                <div className="top-bar-item-left">
-                    91 South St, Exeter, EX1 1EN
-                </div>
-            </Link>
-            <div>
-            </div>
-            <Link legacyBehavior href={menu.linkToMainMenu3}>
-                <div className="top-bar-item-right">
-                    CALL NOW: 07990099119
-                </div>
-            </Link>
-        </div>
-        <div className="nav-bar">
-            <Link legacyBehavior href="/">
-                <div className="logo-container">
-                    <div className="logo">
-                        <img className="logo"src={changedInfo.businessLogo} />
-                    </div>
-                    <div className="logo-text">
-                        <h2 className="logo-text-1">
-                            {changedInfo.businessName}
-                        </h2>
-                        <div className="logo-text-2">
-                            {changedInfo.businessAddressLevel2}, {changedInfo.businessAddressLevel3}
-                        </div>
-                    </div>
-                </div>
-            </Link>
-            <div className="nav-bar-menu">
-                <div className="nav-bar-menu-left">
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu1}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu1}
-                            </a>
-                        </Link>
-                    </h2>
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu2}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu2}
-                            </a>
-                        </Link>
-                    </h2>
-                    <h2>
-                        <Link legacyBehavior href={menu.linkToMainMenu4}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu4}
-                            </a>
-                        </Link>
-                    </h2>
-                </div>
-                <div>
-                </div>
-                <div className="nav-bar-menu-right">
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu3}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu3}
-                            </a>
-                        </Link>
-                    </h2>
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu5}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu5}
-                            </a>
-                        </Link>
-                    </h2>
-                </div>
-            </div>
-        </div>
+       <div className="">
+        <DesktopTopBar />
+       </div>
+       <div className="">
+        <DesktopNavBar />
+       </div>
         <div className="desktop-content">
             <div className="first-screen-block">
                 <img className="first-screen-block-anh" alt={imageAlt.desktopCarouselImage1Alt} src={images.desktopCarouselImage1} />
@@ -203,7 +136,7 @@ export default function DesktopContent() {
                             <div className="services-list-1">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList1Image1Alt} 
+                                        <img className="homepage-carousel-image" alt={imageAlt.serviceList1Image1Alt} 
                                                 src={images.serviceList1Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
@@ -218,7 +151,7 @@ export default function DesktopContent() {
                             <div className="services-list-2">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image"alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
+                                        <img className="homepage-carousel-image"alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory2}
@@ -232,7 +165,7 @@ export default function DesktopContent() {
                             <div className="services-list-3">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
+                                        <img className="homepage-carousel-image" alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory3}
@@ -246,7 +179,7 @@ export default function DesktopContent() {
                             <div className="services-list-4">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
+                                        <img className="homepage-carousel-image" alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory4}
@@ -260,7 +193,7 @@ export default function DesktopContent() {
                             <div className="services-list-5">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
+                                        <img className="homepage-carousel-image" alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory5}
@@ -274,7 +207,7 @@ export default function DesktopContent() {
                             <div className="services-list-6">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
+                                        <img className="homepage-carousel-image" alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory6}
@@ -288,7 +221,7 @@ export default function DesktopContent() {
                             <div className="services-list-7">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
+                                        <img className="homepage-carousel-image" alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory7}

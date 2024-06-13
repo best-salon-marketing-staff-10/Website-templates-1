@@ -12,91 +12,23 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { processedInfo } from '/pages/core/info';
 import { changedInfo } from '/pages/core/info';
 import { button } from '/pages/core/info';
+import TabletNavBar from '/pages/Components/nav-bar/tablet-nav-bar.js';
+import TabletTopBar from '/pages/Components/nav-bar/tablet-top-bar.js';
 
 
 
-
-export default function Test() {
+export default function TabletContent() {
   //Không sử dụng chuột phải
   if (process.browser){
   document.oncontextmenu = new Function("return false;");
   }
   return (
     <>
-       <div className="top-bar-wrapper">
-            <Link legacyBehavior href={processedInfo.callBusiness}>
-                <div className="top-bar-item-left">
-                    91 South St, Exeter, EX1 1EN
-                </div>
-            </Link>
-            <div>
-            </div>
-            <Link legacyBehavior href={menu.linkToMainMenu3}>
-                <div className="top-bar-item-right">
-                    CALL NOW: 07990099119
-                </div>
-            </Link>
+       <div className="">
+            <TabletTopBar />
         </div>
-        <div className="nav-bar">
-            <Link legacyBehavior href="/">
-                <div className="logo-container">
-                    <div className="logo">
-                        <img className="logo"src={changedInfo.businessLogo} />
-                    </div>
-                    <div className="logo-text">
-                        <h2 className="logo-text-1">
-                            {changedInfo.businessName}
-                        </h2>
-                        <div className="logo-text-2">
-                            {changedInfo.businessAddressLevel2}, {changedInfo.businessAddressLevel3}
-                        </div>
-                    </div>
-                </div>
-            </Link>
-            <div className="nav-bar-menu">
-                <div className="nav-bar-menu-left">
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu1}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu1}
-                            </a>
-                        </Link>
-                    </h2>
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu2}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu2}
-                            </a>
-                        </Link>
-                    </h2>
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu4}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu4}
-                            </a>
-                        </Link>
-                    </h2>
-                    <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu5}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu5}
-                            </a>
-                        </Link>
-                    </h2>
-                </div>
-                <div>
-                </div>
-                <div className="nav-bar-menu-right">
-                    <h2 className="nav-bar-main-category-right">
-                        <Link legacyBehavior href={menu.linkToMainMenu3}>
-                            <a className="nav-bar-link-main-menu">
-                                {menu.mainMenu3}
-                            </a>
-                        </Link>
-                    </h2>
-                   
-                </div>
-            </div>
+        <div className="">
+            <TabletNavBar />
         </div>
         <div className="tablet-content">
             <div className="first-screen-block">

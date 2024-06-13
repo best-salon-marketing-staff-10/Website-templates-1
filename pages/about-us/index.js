@@ -27,6 +27,18 @@ export default function AboutUs() {
   if (process.browser){
     document.oncontextmenu = new Function("return false;");
   }
+  /*<div className="page-footer">
+              <div className="page-desktop-footer">
+                <DesktopFooter />
+              </div>
+              <div className="page-mobile-footer">
+                <MobileFooter />
+              </div>
+              <div className="page-tablet-footer">
+                <TabletFooter />
+              </div>
+            </div>  
+            */
   return (
     <>
       <Head>
@@ -81,11 +93,6 @@ export default function AboutUs() {
                   <DesktopNavBar />
                 </div>
               </div>
-              <div className="page-bottom-nav-bar">
-                <div className="mobile-bottom-nav-bar">
-                  <MobileBottomNavBar />
-                </div>
-              </div>
             </div>
             <div className="page-content">
               <div className="page-desktop-content">
@@ -98,17 +105,7 @@ export default function AboutUs() {
                 <TabletContent />
               </div>
             </div>
-            <div className="page-footer">
-              <div className="page-desktop-footer">
-                <DesktopFooter />
-              </div>
-              <div className="page-mobile-footer">
-                <MobileFooter />
-              </div>
-              <div className="page-tablet-footer">
-                <TabletFooter />
-              </div>
-            </div>  
+            
           </div>
     </>
   )

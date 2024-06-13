@@ -2,29 +2,24 @@ import Link from 'next/link';
 import { processedInfo } from '/pages/core/info';
 import { menu } from '/pages/core/info';
 
-export default function desktopTopBar(){
+export default function DesktopTopBar(){
 
     return(
         <>
             <div className="top-bar-wrapper">
-                <div>
-
+            <Link legacyBehavior href={processedInfo.callBusiness}>
+                <div className="top-bar-item-left">
+                    91 South St, Exeter, EX1 1EN
                 </div>
-                <div className="top-bar">
-                    <Link legacyBehavior href={processedInfo.callBusiness}>
-                        <div className="top-bar-item-left">
-                            CALL NOW
-                        </div>
-                    </Link>
-                        <div className="top-bar-item-spacer">
-                        </div>
-                    <Link legacyBehavior href={menu.linkToMainMenu3}>
-                        <div className="top-bar-item-right">
-                            BOOK NOW
-                        </div>
-                    </Link>
-                </div>  
+            </Link>
+            <div>
             </div>
+            <Link legacyBehavior href={menu.linkToMainMenu3}>
+                <div className="top-bar-item-right">
+                    CALL NOW: 07990099119
+                </div>
+            </Link>
+        </div>
         </>
     )
 }

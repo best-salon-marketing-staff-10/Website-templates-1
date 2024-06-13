@@ -17,12 +17,12 @@ export default function MobileNavBar(){
                 
             </Head>
             <div className="nav-bar">
-                <LogoNav />
                 <div className="nav-bar-menu">
-                    <Navbar bg="" expand={false} className="customer-navbar">
-                        <Container fluid>
+                    <Navbar expand={false} bg="" fixed="top" className="customer-navbar">
+                        <Container className="hamburger" fluid>
+                            <LogoNav />
                             <Navbar.Brand href="#"></Navbar.Brand>
-                            <Navbar.Toggle aria-controls="offcanvasNavbar" />
+                            <Navbar.Toggle  aria-controls="offcanvasNavbar" />
                             <Navbar.Offcanvas
                             id="offcanvasNavbar"
                             aria-labelledby="offcanvasNavbarLabel"
@@ -51,7 +51,7 @@ export default function MobileNavBar(){
                                             </a>
                                         </Link>
                                         <div className="nav-bar-services-sub-category">
-                                        <div className="nav-bar-services-sub-category-details">
+                                            <div className="nav-bar-services-sub-category-details">
                                                 <div className="services-list-1">
                                                     <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory1}>
                                                         <a className="nav-bar-link-service-category"> 
@@ -95,7 +95,7 @@ export default function MobileNavBar(){
                                                         </a>
                                                     </Link>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div className="nav-bar-services-sub-category-details">
                                                 <div className="services-list-6">
                                                     <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory6}>
@@ -104,7 +104,7 @@ export default function MobileNavBar(){
                                                         </a>
                                                     </Link>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div className="nav-bar-services-sub-category-details">
                                                 <div className="services-list-7">
                                                     <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory7}>
@@ -144,7 +144,7 @@ export default function MobileNavBar(){
                             </Offcanvas.Body>
                             </Navbar.Offcanvas>
                         </Container>
-                    </Navbar>        
+                    </Navbar>
                 </div>
             </div>
             
