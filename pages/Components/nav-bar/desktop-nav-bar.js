@@ -36,8 +36,8 @@ export default function DesktopNavBar(){
             <div className="nav-bar-menu">
                 <div className="nav-bar-menu-left">
                     <h2 className="nav-bar-main-category">
-                        <Link legacyBehavior href={menu.linkToMainMenu1} className="nav-bar-link-main-menu">
-                            <a className="nav-bar-link-main-menu active">
+                        <Link legacyBehavior href={menu.linkToMainMenu1}>
+                            <a className="nav-bar-link-main-menu">
                                 {menu.mainMenu1}
                             </a>
                         </Link>

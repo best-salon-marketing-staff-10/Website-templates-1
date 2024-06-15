@@ -339,9 +339,6 @@ export default function MobileContent() {
                 </div>
             </div>
         </div>
-        
-            
-            
     </>
   )
 }

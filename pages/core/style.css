@@ -1397,13 +1397,12 @@
       color: #000000;
       max-width: max-content;
       padding: 8px;
-      margin-top: 10px;
-      margin-bottom: 20px;
       text-decoration: none;
       font-size: 17px;
       vertical-align: middle;
       margin: auto;
       margin-top: 20px;
+      margin-bottom: 20px;
     }
     .button-3{
       background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
@@ -1417,6 +1416,7 @@
       vertical-align: middle;
       max-width: max-content;
       margin: auto;
+      margin-bottom: 20px;
     }
     /* Customer-review
     */
@@ -1884,6 +1884,66 @@
     .price-list-addition-info{
       font-size: 15px;
     }
+    /* Trang About Us
+    */
+    .tablet-about-us{
+      background-color: #000000;
+    }
+    /* Màn hình đầu tiên của trang About us
+    */
+    .first-screen-about-us-block{
+      background-image: url(/images/tablet-nail-salon-happy-customer-1-2.jpg);
+      height: 200px;
+      position: relative;
+    }
+    .first-screen-about-us-block-title{
+      font-weight: bold;
+      font-size: 45px;
+      font-family:  'Roboto', sans-serif;
+      font-style: italic;
+      font-kerning: none;
+      -webkit-text-stroke-color: #000000;
+      -webkit-text-stroke-width: 2px;
+      color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .content-name-business-about-us{
+      color: #ac8152;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-left: 30px;
+      margin-right: 20px;
+      padding-bottom: 20px;
+    }
+    /* Nội dung trang About us
+    */
+    .about-us-content{
+      max-width: 1500px;
+      margin: auto;
+    }
+    .content-about-us-description{
+      color: #ffffff;
+      margin-left: 30px;
+      margin-right: 20px;
+      font-size: 18px;
+    }
+    .about-us-carousel-image{
+      max-width: 400px;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    .desktop-about-us-carousel-image{
+      margin-left: 10px;
+      margin-right: 10px;
+      border: solid 3px #ac8152;
+      border-radius: 15px;
+    }
 
   }
   /*Chế độ Desktop
@@ -2134,14 +2194,6 @@
       display: flex;
     }   
     .nav-bar-link-main-menu:hover{
-      background-color: #f6e27a;
-      background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
-      color: #000;
-      border-radius: 5px;
-      padding: 7px;
-      font-weight: bold;
-    }
-    .nav-bar-link-main-menu.active {
       background-color: #f6e27a;
       background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
       color: #000;
@@ -2774,6 +2826,67 @@
     }
     .price-list-addition-info{
       font-size: 15px;
+    }
+
+    /* Trang About us
+    */
+    .desktop-about-us{
+      background-color: #000000;
+    }
+    /* Màn hình đầu tiên của trang About us
+    */
+    .first-screen-about-us-block{
+      background-image: url(/images/desktop-nail-salon-happy-customer-1-2.jpg);
+      height: 200px;
+      position: relative;
+    }
+    .first-screen-about-us-block-title{
+      font-weight: bold;
+      font-size: 45px;
+      font-family:  'Roboto', sans-serif;
+      font-style: italic;
+      font-kerning: none;
+      -webkit-text-stroke-color: #000000;
+      -webkit-text-stroke-width: 2px;
+      color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .content-name-business-about-us{
+      color: #ac8152;
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 50px;
+      margin-left: 30px;
+      margin-right: 20px;
+      padding-bottom: 20px;
+    }
+    /* Nội dung trang About us
+    */
+    .about-us-content{
+      max-width: 1500px;
+      margin: auto;
+    }
+    .content-about-us-description{
+      color: #ffffff;
+      margin-left: 30px;
+      margin-right: 20px;
+      font-size: 18px;
+    }
+    .about-us-carousel-image{
+      max-width: 400px;
+      margin: auto;
+      padding-bottom: 30px;
+    }
+    .desktop-about-us-carousel-image{
+      margin-left: 10px;
+      margin-right: 10px;
+      border: solid 3px #ac8152;
+      border-radius: 15px;
     }
   }
   

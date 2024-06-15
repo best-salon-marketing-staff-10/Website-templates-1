@@ -137,7 +137,7 @@ export default function TabletContent() {
                             <div className="services-list-1">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList1Image1Alt} 
+                                        <img className="service-carousel-image" alt={imageAlt.serviceList1Image1Alt} 
                                                 src={images.serviceList1Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
@@ -152,7 +152,7 @@ export default function TabletContent() {
                             <div className="services-list-2">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image"alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
+                                        <img className="service-carousel-image"alt={imageAlt.serviceList2Image1Alt} src={images.serviceList2Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory2}
@@ -166,7 +166,7 @@ export default function TabletContent() {
                             <div className="services-list-3">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
+                                        <img className="service-carousel-image" alt={imageAlt.serviceList3Image3Alt}  src={images.serviceList3Image3} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory3}
@@ -180,7 +180,7 @@ export default function TabletContent() {
                             <div className="services-list-4">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
+                                        <img className="service-carousel-image" alt={imageAlt.serviceList4Image1Alt} src={images.serviceList4Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory4}
@@ -194,7 +194,7 @@ export default function TabletContent() {
                             <div className="services-list-5">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
+                                        <img className="service-carousel-image" alt={imageAlt.serviceList5Image2Alt} src={images.serviceList5Image2} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory5}
@@ -208,7 +208,7 @@ export default function TabletContent() {
                             <div className="services-list-6">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
+                                        <img className="service-carousel-image" alt={imageAlt.serviceList6Image1Alt} src={images.serviceList6Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                                 {serviceCategory.serviceCategory6}
@@ -222,7 +222,7 @@ export default function TabletContent() {
                             <div className="services-list-7">
                                 <div className="service-container">
                                     <div className="homepage-service-content">
-                                        <img className="carousel-image" alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
+                                        <img className="service-carousel-image" alt={imageAlt.serviceList7Image1Alt} src={images.serviceList7Image1} />
                                         <div className="homepage-service-content-text">
                                             <h1 className="homepage-service-content-title">
                                             {serviceCategory.serviceCategory7}

@@ -19,7 +19,6 @@ import { serviceCategory } from '/pages/core/info';
 import { pageContent } from '/pages/core/info';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-
 export default function MobileContent(){
     //Cần biến đoạn này thành component cho ngon lành, component carousel hay gì đó tùy có thể ko cần carousel
     return(
