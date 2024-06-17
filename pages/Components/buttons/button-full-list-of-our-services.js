@@ -7,7 +7,7 @@ export default function ButtonFullListOfOurServices(){
     return(
         <>
             <Link legacyBehavior href={button.button5LinkTo}>
-                    <div className="button-model-1">
+                    <div className="button-5">
                         {button.button5Content}
                     </div>
                 </Link>

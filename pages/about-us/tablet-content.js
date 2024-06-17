@@ -20,22 +20,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export default function TabletContent(){
-    /*
-    
-
-                <div className="tablet-about-us-our-story">
-                    <OurStory />
-                </div>
-                <div className="button">
-                        <Button2 />
-                </div>
-                
-                <div className="tablet-about-us-dong-vien">
-                    <div className="time-schedule">
-                        <TimeSchedule />
-                    </div>
-                </div>
-                */
     return(
         <>
             <div className="tablet-about-us">

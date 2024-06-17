@@ -76,11 +76,6 @@ export default function OurPolicy() {
                   <DesktopNavBar />
                 </div>
               </div>
-              <div className="page-bottom-nav-bar">
-                <div className="mobile-bottom-nav-bar">
-                  <MobileBottomNavBar />
-                </div>
-              </div>
             </div>
 
             <div className="our-policy-content">

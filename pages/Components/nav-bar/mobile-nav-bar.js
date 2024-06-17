@@ -28,14 +28,14 @@ export default function MobileNavBar(){
                             aria-labelledby="offcanvasNavbarLabel"
                             placement="end"
                             >
-                            <Offcanvas.Header closeButton>
+                            <Offcanvas.Header closeButton className="logo-nav">
                                 <Offcanvas.Title id="offcanvasNavbarLabel">
                                     <Link legacyBehavior href="/">
-                                        <LogoNav />
+                                            <LogoNav />
                                     </Link>
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
-                            <Offcanvas.Body>
+                            <Offcanvas.Body className="offcanvas-body">
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
                                     <div className="nav-bar-main-category">
                                         <Link legacyBehavior href={menu.linkToMainMenu1}>

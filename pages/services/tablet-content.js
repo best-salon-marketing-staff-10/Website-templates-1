@@ -33,10 +33,10 @@ export default function TabletContent(){
         <>
             <div className="tablet-service-background">
                 <div className="">
-                    <TabletTopBar />
+                    <TabletTopBar/>
                 </div>
                 <div className="">
-                    <TabletNavBar />
+                    <TabletNavBar/>
                 </div>
                 <div className="tablet-service-content">
                     <div className="first-screen-service-block">

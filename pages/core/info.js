@@ -664,18 +664,22 @@ const pageContent = {
   //Customer-review-1
   cusReviewContent1: "Brilliant service and skill. Would highly recommend for nails in Exeter.",
   cusReview1: "-Rebecca Webster",
+
   //Customer-review-2
   cusReviewContent2: "Very nice service, quick and the staff are extermely kind. They are exactly on time, fairly, priced, got a nice collection of colors and very responsive to messages. They also give a student discount which is great!",
   cusReview2: "-Wala Award",
+
   //Customer-review-3
   cusReviewContent3: "Visited today with my daughters. Lovely staff, loved the nails amazing service would recommend",
   cusReview3: "-Karla Hanna",
+
   //Customer-review-4
   cusReviewContent4: "Best nail salon in Exeter, everyone is incredibly talented and will do anything you could possibly want. Will never go anywhere else.",
   cusReview4: "-Tayler Tots",
+
   //Customer-review-5
-  cusReviewContent5: "Edit - Second time going and they went above and beyond. Today I got a new set done - no problems, exactly what I asked for but I noticed the colour I wanted was very faded and not as bright as I had hoped, I didn’t say anything because of an appointment being so soon that I needed to get to. When I left the shop from getting my nails done I decided I wasn’t overly happy. (No fault of the nail tech). I went back and discussed my issue and I was sat back down and had the nail art re done with brighter colours!! Thank you so much for the brilliant customer service 😊. I had my nails today and I’m really happy with them, they are exactly what I asked for!! The lady that did them took great care and took her time. She was very gentle and lovely ☺️ I’ll definitely be coming back 💓",
-  cusReview5: "-Danni Alcock",
+  cusReviewContent5: "",
+  cusReview5: "",
 }
 
 const button = {
@@ -849,6 +853,12 @@ const images = {
   cusReviewImage3: "/images/nail-salon-customer-review-3-2.jpg",
   cusReviewImage4: "/images/nail-salon-customer-review-4-2.jpg",
   cusReviewImage5: "/images/nail-salon-customer-review-5-2.jpg",
+
+  customerImage1: "/images/customer-image-1.png",
+  customerImage2: "/images/customer-image-2.png",
+  customerImage3: "/images/customer-image-3.png",
+  customerImage4: "/images/customer-image-4.png",
+  customerImage5: "/images/customer-image-5.png",
 
   //Ảnh Footer
   footerImagePhoneIcon: "/images/icons/icon-phone-white.png",

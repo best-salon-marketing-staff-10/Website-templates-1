@@ -383,6 +383,21 @@
         font-size: 17px;
         vertical-align: middle;
       }
+      .button-5{
+        background-image: linear-gradient(to right, #a78336 0, #cb9b51 22%, #f6e27a 45%, #ffe1c8 50%, #f6e27a 55%, #cb9b51 78%, #a78336 100%);
+        border-color: #cb9b51;
+        border-radius: 5px;
+        color: #000000;
+        text-align: center;
+        max-width: max-content;
+        padding: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 17px;
+        vertical-align: middle;
+      }
     /*Màn hình đầu tiên, giao diện mobile, cho chữ và nút lên trên ảnh, trên 1 chút so với đáy
     */
     .first-screen-block-bottom{
@@ -414,12 +429,15 @@
       -webkit-text-stroke-width: 2px;
       color: #FFFFFF;
     }
-  
-  /*Trang About
-  */
 
   /*Hiển thị phần nav-bar
   */
+  .offcanvas-body {
+    background-color: #000;
+  }
+  .logo-nav{
+    background-color: #000;
+  }
   .customer-navbar{
     background-color: #232323;
     border-bottom: 2px solid #9f7741;
@@ -433,28 +451,29 @@
     color: #ffffff;
     font-weight: 500;
     font-size: 18px;
-    margin: 20px;
+    margin: 10px;
   }
   .nav-bar-link-service-category{
-      text-decoration: none;
-      color: #949aa5;
-      font-weight: 500;
-      font-size: 21px;
+    text-decoration: none;
+    color: #949aa5;
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 10px;
   }
   .nav-bar-services-sub-category{
-      margin-top: 25px;
+    margin-top: 25px;
   }
   .nav-bar-services-sub-category-details{
-      text-decoration: none;
-      color: #B0B7C3;
-      font-weight: 500;
-      font-size: 21px;
-      margin-left: 15px;
-      margin-bottom: 10px;
+    text-decoration: none;
+    color: #B0B7C3;
+    font-weight: 500;
+    font-size: 21px;
+    margin-left: 15px;
+    margin-bottom: 10px;
   }
   .navbar-toggler-icon {
-     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-     border-radius: 5px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#acacace8' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border-radius: 5px;
   }
 
   .navbar-toggler{
@@ -1027,6 +1046,41 @@
       max-width: 400px;
       margin: auto;
       padding-bottom: 30px;
+    }
+    /*Phần content của our-policy
+  */
+    /*content-our-policy.js
+    */
+   
+    .content-our-policy{
+      background-color: #000000;
+      border: solid 1px black;
+    }
+    .content-heading-h1{
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 60px;
+      color: #ffffff;
+    }
+    .content-block{
+      margin-bottom: 20px;
+    }
+    .content-heading-h2{
+      font-size: 20px;
+      font-weight: 500;
+      color: #ffffff;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .content-description{
+      color: #ffffff;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .content-description-link-a{
+      font-size: 16px;
+      color: #ffffff;
     }
 
 
@@ -1944,6 +1998,41 @@
       border: solid 3px #ac8152;
       border-radius: 15px;
     }
+    /*Phần content của our-policy
+  */
+    /*content-our-policy.js
+    */
+    .content-our-policy{
+      background-color: #000000;
+      border: solid 1px black;
+    }
+    .content-heading-h1{
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 30px;
+    }
+    .content-block{
+      margin-bottom: 20px;
+    }
+    .content-heading-h2{
+      font-size: 20px;
+      font-weight: 500;
+      color: #ffffff;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .content-description{
+      color: #ffffff;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .content-description-link-a{
+      font-size: 16px;
+      color: #ffffff;
+    }
 
   }
   /*Chế độ Desktop
@@ -2437,12 +2526,20 @@
       font-style: initial;
       font-weight: 500;
       color: #ffffff;
+      border: solid; 
     }
     .content{
       color: #ffffff;
       max-width: max-content;
       margin: auto;
       margin-top: 80px;
+    }
+    .a{
+      border: solid 1px red;
+      display: flex;
+    }
+    .b{
+      border: solid 1px red;
     }
 
     /* Phần service trang homepage
@@ -2887,6 +2984,41 @@
       margin-right: 10px;
       border: solid 3px #ac8152;
       border-radius: 15px;
+    }
+  /*Phần content của our-policy
+  */
+    /*content-our-policy.js
+    */
+    .content-our-policy{
+      background-color: #000000;
+      border: solid 1px black;
+    }
+    .content-heading-h1{
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 30px;
+    }
+    .content-block{
+      margin-bottom: 20px;
+    }
+    .content-heading-h2{
+      font-size: 20px;
+      font-weight: 500;
+      color: #ffffff;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .content-description{
+      color: #ffffff;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .content-description-link-a{
+      font-size: 16px;
+      color: #ffffff;
     }
   }
   
@@ -3425,10 +3557,9 @@
   /*Phần content của our-policy
   */
     /*content-our-policy.js
-    */
     .content-our-policy{
-      margin-left: 10px;
-      margin-right: 10px;
+      background-color: #000000;
+      border: solid 1px red;
     }
     .content-heading-h1{
       font-size: 30px;
@@ -3446,6 +3577,8 @@
       font-size: 16px;
       color: #000000;
     }
+    */
+    
   /*Phần Footer
   */
     /*footer

@@ -26,18 +26,23 @@ export default function CustomerReview() {
                     <div className="divider">
                     </div>
                 </div>
-                
                 <div className="customer-review-content-block">
                     <div className="customer-review-content">
-                        <Carousel controls={false} interval="2000">
+                        <Carousel controls={false} interval="2000000000">
                             <Carousel.Item>
                                 <div className="customer-content">
+                                    <div className="a">
+                                        <div>
+                                            <img className="b" src={images.customerImage1} />
+                                        </div>
+                                        <div className="customer-content-name">
+                                            {pageContent.cusReview1}
+                                        </div>
+                                    </div>
                                     <div className="content">
                                         {pageContent.cusReviewContent1}
                                     </div>
-                                    <span className="customer-content-name">
-                                        {pageContent.cusReview1}
-                                    </span> 
+
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>

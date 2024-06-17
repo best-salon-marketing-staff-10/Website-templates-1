@@ -2,6 +2,12 @@ import Link from "next/link";
 import { changedInfo } from "../core/info";
 import { processedInfo } from '/pages/core/info';
 import { pageContent } from '/pages/core/info';
+import { menu } from '/pages/core/info';
+import { images } from '/pages/core/info';
+import { imageAlt } from '/pages/core/info';
+import { serviceCategory } from '/pages/core/info';
+import TimeSchedule from '/pages/Components/time-schedule/time-schedule.js';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function ContentOurPolicy(){
     return(
@@ -54,6 +60,7 @@ export default function ContentOurPolicy(){
                         {pageContent.contentOurPolicyDescription5}
                     </div>
                 </div>
+                
             </div>
         </>
     );
