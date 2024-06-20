@@ -31,6 +31,7 @@ import { changedInfo } from '/pages/core/info';
 import TimeSchedule from '/pages/Components/time-schedule/time-schedule';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import MobileNavBar from '/pages/Components/nav-bar/mobile-nav-bar.js';
+import FixedComponent  from '/pages/services/FixedComponent.js';
 
 
 export default function MobileContent() {
@@ -53,52 +54,52 @@ export default function MobileContent() {
                     <h2 className="content-name-business">
                         Top Nails Exeter
                     </h2>
-                    <div className="service-menu">
-                        <div className="service-header-menu">
-                            <h5>
-                                Touch Category to Qyickly view
-                            </h5>
-                        </div>
-                        <div className="service-menu-list">
-                            <div className="service-list">
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory1}>
-                                    <div className="service-list-1">
-                                        {serviceCategory.serviceCategory1}
-                                    </div>
-                                </Link>
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory2}>
-                                    <div className="service-list-2">
-                                        {serviceCategory.serviceCategory2}
-                                    </div>
-                                </Link>
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory3}>
-                                    <div className="service-list-3">
-                                        {serviceCategory.serviceCategory3}
-                                    </div>
-                                </Link>
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory4}>
-                                    <div className="service-list-4">
-                                        {serviceCategory.serviceCategory4}
-                                    </div>
-                                </Link>
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory5}>
-                                    <div className="service-list-5">
-                                        {serviceCategory.serviceCategory5}
-                                    </div>
-                                </Link>
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory6}>
+                <div className="service-menu">
+                    <div className="service-header-menu">
+                        <h5>
+                            Touch Category to Qyickly view
+                        </h5>
+                    </div>
+                    <div className="service-menu-list">
+                        <div className="service-list">
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory1}>
+                                <div className="service-list-1">
+                                    {serviceCategory.serviceCategory1}
+                                </div>
+                            </Link>
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory2}>
+                                <div className="service-list-2">
+                                    {serviceCategory.serviceCategory2}
+                                </div>
+                            </Link>
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory3}>
+                                <div className="service-list-3">
+                                    {serviceCategory.serviceCategory3}
+                                </div>
+                            </Link>
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory4}>
+                                <div className="service-list-4">
+                                    {serviceCategory.serviceCategory4}
+                                </div>
+                            </Link>
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory5}>
+                                <div className="service-list-5">
+                                    {serviceCategory.serviceCategory5}
+                                </div>
+                            </Link>
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory6}>
                                 <div className="service-list-6">
                                     {serviceCategory.serviceCategory6}
                                 </div>
-                                </Link>
-                                <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory7}>
-                                    <div className="service-list-7">
-                                        {serviceCategory.serviceCategory7}
-                                    </div>
-                                </Link>
-                            </div>
+                            </Link>
+                            <Link legacyBehavior href={serviceCategory.mobileLinkToServiceCategory7}>
+                                <div className="service-list-7">
+                                    {serviceCategory.serviceCategory7}
+                                </div>
+                            </Link>
                         </div>
                     </div>
+                </div>
                     <div className="service-list-content">
                         <div className="services-list-1">
                             <div className="service-container">

@@ -52,7 +52,7 @@ export default function OurPolicy() {
           <meta property="og:type" content='website' />
 
         </Head>
-      <div className="page-container">
+          <div className="page-container">
             <div className="page-nav-bar">
               <div className="page-top-bar">
                 <div className="page-desktop-top-bar">

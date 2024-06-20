@@ -663,19 +663,19 @@ const pageContent = {
 
   //Customer-review-1
   cusReviewContent1: "Brilliant service and skill. Would highly recommend for nails in Exeter.",
-  cusReview1: "-Rebecca Webster",
+  cusReview1: "Rebecca Webster",
 
   //Customer-review-2
   cusReviewContent2: "Very nice service, quick and the staff are extermely kind. They are exactly on time, fairly, priced, got a nice collection of colors and very responsive to messages. They also give a student discount which is great!",
-  cusReview2: "-Wala Award",
+  cusReview2: "Wala Award",
 
   //Customer-review-3
   cusReviewContent3: "Visited today with my daughters. Lovely staff, loved the nails amazing service would recommend",
-  cusReview3: "-Karla Hanna",
+  cusReview3: "Karla Hanna",
 
   //Customer-review-4
   cusReviewContent4: "Best nail salon in Exeter, everyone is incredibly talented and will do anything you could possibly want. Will never go anywhere else.",
-  cusReview4: "-Tayler Tots",
+  cusReview4: "Tayler Tots",
 
   //Customer-review-5
   cusReviewContent5: "",

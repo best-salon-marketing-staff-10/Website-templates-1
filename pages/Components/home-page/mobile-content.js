@@ -19,7 +19,8 @@ import { processedInfo } from '/pages/core/info';
 import { changedInfo } from '/pages/core/info';
 import { button } from '/pages/core/info';
 import MobileNavBar from '/pages/Components/nav-bar/mobile-nav-bar.js';
-
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 
 
@@ -33,121 +34,119 @@ export default function MobileContent() {
         <div className="">
             <MobileNavBar />
         </div>
-            <div className="mobile-content">
-                <div className="first-screen-block">
-                    <img className="first-screen-block-anh" alt={imageAlt.mobileCarouselImage1Alt} 
-                            src={images.tabletCarouselImage1} />
-                    <div className="first-screen-block-bottom">
-                        <h1 className="first-screen-block-title">
-                            {pageContent.carouselHeading}
-                        </h1>
-                        <div className="button">
+        <div className="mobile-content">
+            <div className="first-screen-block">
+                <img className="first-screen-block-anh" alt={imageAlt.mobileCarouselImage1Alt} src={images.tabletCarouselImage1} />
+                <div className="first-screen-block-bottom">
+                    <h1 className="first-screen-block-title">
+                        {pageContent.carouselHeading}
+                    </h1>
+                    <div className="button">
+                    </div>
+                </div>
+            </div>
+            <div className="dong-vien-5">
+                <div className="nhan-manh-2-background">
+                    <div className="nhan-manh-content"> 
+                        <div className="nhan-manh-content-wrapper">
+                            <h2 className="nhan-manh-2-content-header">
+                                {pageContent.section5Heading}
+                            </h2>
+                            <div className="nhan-manh-2-content-description">
+                                {pageContent.section5Description}
+                            </div>
+                            <div>
+                                <Button1/>
+                            </div>
+                        </div>
+                        <div className="nhan-manh-2-images">
+                            <img className="nhan-manh-2-image-1" alt={imageAlt.section5Image1Alt} src={images.section5Image1} />
+                            <img className="nhan-manh-2-image-2" src={images.section5Image2} />
                         </div>
                     </div>
                 </div>
-                <div className="dong-vien-5">
-                    <div className="nhan-manh-2-background">
-                        <div className="nhan-manh-content"> 
-                            <div className="nhan-manh-content-wrapper">
-                                <h2 className="nhan-manh-2-content-header">
-                                    {pageContent.section5Heading}
-                                </h2>
-                                <div className="nhan-manh-2-content-description">
-                                    {pageContent.section5Description}
-                                </div>
-                                <div>
-                                    <Button1 />
-                                </div>
+            </div>
+            <div className="dong-vien-6">
+                <div className="nhan-manh-3-background">
+                    <div className="nhan-manh-content">
+                        <div className="nhan-manh-content-wrapper">
+                            <h2 className="nhan-manh-3-content-header">
+                                {pageContent.section6Heading}
+                            </h2>
+                            <div className="nhan-manh-3-content-description">
+                                {pageContent.section6Description}
                             </div>
-                            <div className="nhan-manh-2-images">
-                                <img className="nhan-manh-2-image-1" alt={imageAlt.section5Image1Alt} src={images.section5Image1} />
-                                <img className="nhan-manh-2-image-2" src={images.section5Image2} />
-                            </div>
+                        </div>
+                        <div className="nhan-manh-3-images">
+                            <img className="nhan-manh-3-image-1" alt={imageAlt.section6Image1Alt} src={images.section6Image1} />
+                            <img className="nhan-manh-3-image-2" src={images.section6Image2} />
                         </div>
                     </div>
                 </div>
-                <div className="dong-vien-6">
-                    <div className="nhan-manh-3-background">
-                        <div className="nhan-manh-content">
-                            <div className="nhan-manh-content-wrapper">
-                                <h2 className="nhan-manh-3-content-header">
-                                    {pageContent.section6Heading}
-                                </h2>
-                                <div className="nhan-manh-3-content-description">
-                                    {pageContent.section6Description}
-                                </div>
-                            </div>
-                            <div className="nhan-manh-3-images">
-                                <img className="nhan-manh-3-image-1" alt={imageAlt.section6Image1Alt} src={images.section6Image1} />
-                                <img className="nhan-manh-3-image-2" src={images.section6Image2} />
+            </div>
+            <div className="dong-vien-7">
+                <div className="nhan-manh-4-background">
+                    <div className="nhan-manh-4-content-1">
+                        <div className="nhan-manh-4-content-1-wrapper">
+                            <h2 className="nhan-manh-4-content-header">
+                                {pageContent.section7Heading}
+                            </h2>
+                            <div className="nhan-manh-4-content-description">
+                                {pageContent.section7Description}
                             </div>
                         </div>
+                        <div className="nhan-manh-4-content-1-image">
+                            <img className="nhan-manh-4-content-1-image-1" alt={imageAlt.section7Image1Alt} src={images.section7Image1} />
+                            <img className="nhan-manh-4-content-1-image-2" src={images.section7Image2} />
+                        </div>
                     </div>
-                </div>
-                <div className="dong-vien-7">
-                    <div className="nhan-manh-4-background">
-                        <div className="nhan-manh-4-content-1">
-                            <div className="nhan-manh-4-content-1-wrapper">
-                                <h2 className="nhan-manh-4-content-header">
-                                    {pageContent.section7Heading}
+                    <div className="nhan-manh-4-content-2">
+                        <div className="nhan-manh-4-content-2-wrapper">
+                            <div className="nhan-manh-4-content-wrapper">
+                                <h2 className="nhan-manh-4-content-header-4">
+                                    {pageContent.section8Heading}
                                 </h2>
                                 <div className="nhan-manh-4-content-description">
-                                    {pageContent.section7Description}
+                                    {pageContent.section8Description}
                                 </div>
-                            </div>
-                            <div className="nhan-manh-4-content-1-image">
-                                <img className="nhan-manh-4-content-1-image-1" alt={imageAlt.section7Image1Alt} src={images.section7Image1} />
-                                <img className="nhan-manh-4-content-1-image-2" src={images.section7Image2} />
-                            </div>
-                        </div>
-                        <div className="nhan-manh-4-content-2">
-                            <div className="nhan-manh-4-content-2-wrapper">
-                                <div className="nhan-manh-4-content-wrapper">
-                                    <h2 className="nhan-manh-4-content-header-4">
-                                        {pageContent.section8Heading}
-                                    </h2>
-                                    <div className="nhan-manh-4-content-description">
-                                        {pageContent.section8Description}
-                                    </div>
-                                    <div className="nhan-manh-4-content-2-image">
-                                        <img className="nhan-manh-4-content-2-image-1" src={images.section7Image3} />
-                                        <img className="nhan-manh-4-content-2-image-2" src={images.section7Image4} />
-                                    </div>
-                                    <div className="nhan-manh-4-button">
-                                        <Button2/>
-                                    </div>
+                                <div className="nhan-manh-4-content-2-image">
+                                    <img className="nhan-manh-4-content-2-image-1" src={images.section7Image3} />
+                                    <img className="nhan-manh-4-content-2-image-2" src={images.section7Image4} />
+                                </div>
+                                <div className="nhan-manh-4-button">
+                                    <Button2/>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <CustomerReview />
-                </div>
-                <div className="homepage-mobile-services">
-                    <div className="homepage-mobile-services-content">
-                        <div className="homepage-mobile-services-content-title">
-                            Our Services
-                        </div>
-                        <div className="homepage-mobile-services-content-description">
-                            Fall in Love with the Art of Nails
-                        </div>
+            </div>
+            <div>
+                <CustomerReview />
+            </div>
+            <div className="homepage-mobile-services">
+                <div className="homepage-mobile-services-content">
+                    <div className="homepage-mobile-services-content-title">
+                        Our Services
                     </div>
-                    <Link legacyBehavior href={button.button6LinkToMobile}>
-                        <div className="services-list-1">
-                            <div className="service-container">
-                                <div className="homepage-service-content">
-                                    <img alt={imageAlt.serviceList1Image1Alt} 
-                                            src={images.serviceList1Image1} />
-                                    <div className="homepage-service-content-text">
-                                        <h1 className="homepage-service-content-title">
-                                            {serviceCategory.serviceCategory1}
-                                        </h1>
-                                    </div>
+                    <div className="homepage-mobile-services-content-description">
+                        Fall in Love with the Art of Nails
+                    </div>
+                </div>
+                <Link legacyBehavior href={button.button6LinkToMobile}>
+                    <div className="services-list-1">
+                        <div className="service-container">
+                            <div className="homepage-service-content">
+                                <img alt={imageAlt.serviceList1Image1Alt} src={images.serviceList1Image1} />
+                                <div className="homepage-service-content-text">
+                                    <h1 className="homepage-service-content-title">
+                                        {serviceCategory.serviceCategory1}
+                                    </h1>
                                 </div>
                             </div>
                         </div>
-                    </Link>
+                    </div>
+                </Link>
                     <Link legacyBehavior href={button.button7LinkToMobile}>
                         <div className="services-list-2">
                             <div className="service-container">
@@ -375,10 +374,9 @@ export default function MobileContent() {
                         </a>
                     </Link>
                 </div>
-                </div>
-                
             </div>
             </div>
+        </div>
     </>
   )
 }

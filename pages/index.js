@@ -16,7 +16,7 @@ export default function Home() {
     <>
         <Head>
         </Head>
-        <div className="page-content">
+            <div className="page-content">
               <div className="page-desktop-content">
                 <DesktopContent />
               </div>

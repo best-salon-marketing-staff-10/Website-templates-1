@@ -28,12 +28,12 @@ export default function CustomerReview() {
                 </div>
                 <div className="customer-review-content-block">
                     <div className="customer-review-content">
-                        <Carousel controls={false} interval="2000000000">
+                        <Carousel controls={false} interval="2000">
                             <Carousel.Item>
                                 <div className="customer-content">
-                                    <div className="a">
+                                    <div className="customer-content-name-block">
                                         <div>
-                                            <img className="b" src={images.customerImage1} />
+                                            <img src={images.customerImage1} />
                                         </div>
                                         <div className="customer-content-name">
                                             {pageContent.cusReview1}
@@ -42,37 +42,51 @@ export default function CustomerReview() {
                                     <div className="content">
                                         {pageContent.cusReviewContent1}
                                     </div>
-
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <div className="customer-content">
+                                    <div className="customer-content-name-block">
+                                        <div>
+                                            <img src={images.customerImage2} />
+                                        </div>
+                                        <div className="customer-content-name">
+                                            {pageContent.cusReview2}
+                                        </div>
+                                    </div>
                                     <div className="content">
                                         {pageContent.cusReviewContent2}
                                     </div>
-                                    <span className="customer-content-name">
-                                        {pageContent.cusReview2}
-                                    </span>
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <div className="customer-content">
+                                    <div className="customer-content-name-block">
+                                        <div>
+                                            <img src={images.customerImage3} />
+                                        </div>
+                                        <div className="customer-content-name">
+                                            {pageContent.cusReview3}
+                                        </div>
+                                    </div>
                                     <div className="content">
                                         {pageContent.cusReviewContent3}
                                     </div>
-                                    <span className="customer-content-name">
-                                        {pageContent.cusReview3}
-                                    </span>
                                 </div>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <div className="customer-content">
+                                    <div className="customer-content-name-block">
+                                        <div>
+                                            <img src={images.customerImage4} />
+                                        </div>
+                                        <div className="customer-content-name">
+                                            {pageContent.cusReview4}
+                                        </div>
+                                    </div>
                                     <div className="content">
                                         {pageContent.cusReviewContent4}
                                     </div>
-                                    <span className="customer-content-name">
-                                        {pageContent.cusReview4}
-                                    </span> 
                                 </div>
                             </Carousel.Item>
                         </Carousel> 
